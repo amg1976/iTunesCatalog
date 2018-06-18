@@ -163,7 +163,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/iTunesCatalog/AppDelegate.swift",
 			);
 			name = "Swift Lint";
 			outputPaths = (
