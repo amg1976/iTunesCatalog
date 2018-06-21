@@ -13,6 +13,8 @@
 		209F69C720D85AEB00C0CB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C620D85AEB00C0CB9D /* Assets.xcassets */; };
 		209F69CA20D85AEB00C0CB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C820D85AEB00C0CB9D /* LaunchScreen.storyboard */; };
 		20DC261520D98225002D98C6 /* iTunesCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC261420D98225002D98C6 /* iTunesCatalogTests.swift */; };
+		20EDC58F20DC416300AEC894 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC58E20DC416300AEC894 /* Api.swift */; };
+		20EDC59020DC416300AEC894 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC58E20DC416300AEC894 /* Api.swift */; };
 		887F9EC19F7845A0442CB1B7 /* Pods_iTunesCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,7 @@
 		20DC261220D98224002D98C6 /* iTunesCatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesCatalogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DC261420D98225002D98C6 /* iTunesCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesCatalogTests.swift; sourceTree = "<group>"; };
 		20DC261620D98225002D98C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EDC58E20DC416300AEC894 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		A3F5AA94D4D49CE8BBAEF83C /* Pods-iTunesCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesCatalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesCatalog/Pods-iTunesCatalog.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +93,7 @@
 				209F69C620D85AEB00C0CB9D /* Assets.xcassets */,
 				209F69C820D85AEB00C0CB9D /* LaunchScreen.storyboard */,
 				209F69CB20D85AEB00C0CB9D /* Info.plist */,
+				20EDC58E20DC416300AEC894 /* Api.swift */,
 			);
 			path = iTunesCatalog;
 			sourceTree = "<group>";
@@ -258,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20EDC58F20DC416300AEC894 /* Api.swift in Sources */,
 				209F69C220D85AE900C0CB9D /* ViewController.swift in Sources */,
 				209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */,
 			);
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20EDC59020DC416300AEC894 /* Api.swift in Sources */,
 				20DC261520D98225002D98C6 /* iTunesCatalogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
