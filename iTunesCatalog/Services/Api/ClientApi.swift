@@ -8,21 +8,28 @@
 
 import Foundation
 
-class ClientApi {
+final class ClientApi {
     
-    private var networkService: ResourceLoader
+    private var resourceLoader: ResourceLoader
     
-    init(withNetworkService networkService: ResourceLoader) {
-        self.networkService = networkService
+    /// Creates a new instance of the ClientApi object
+    ///
+    /// - Parameter resourceLoader: an instance of ResourceLoader. Defaults to NetworkService.
+    init(withResourceLoader resourceLoader: ResourceLoader = NetworkService()) {
+        self.resourceLoader = resourceLoader
     }
     
-    func getMovies(completion: @escaping (ListResponse<Movie>?) -> Void) {
+    /// Fetchs a list of movies from the resource loader
+    ///
+    /// - Parameter completion: an instance of ListResponse<Movie> or nil if it fails fetching / parsing.
+    func getMovies(onCompletion completion: @escaping (Result<ListResponse<Movie>>) -> Void) {
         
         let moviesResource = ResourceFactory.createListMoviesResource()
         
-        networkService.load(resource: moviesResource) { result in
+        resourceLoader.load(resource: moviesResource) { result in
             completion(result)
         }
+        
     }
     
 }
