@@ -12,11 +12,6 @@ enum NetworkError: Error {
     case parseError
 }
 
-enum Result<T> {
-    case succeeded(T)
-    case errored(Error)
-}
-
 /// Defines methods needed to load a Resource asynchronously
 protocol ResourceLoader {
     func load<T>(resource: Resource<T>, completion: @escaping (Result<T>) -> Void)
