@@ -11,14 +11,14 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    private var appCoordinator: AppCoordinator!
+    
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        ClientApi().getMovies { movies in
-            print(movies)
-        }
-        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.appCoordinator = AppCoordinator(withWindow: window!)
+        appCoordinator.start()
         return true
     }
 

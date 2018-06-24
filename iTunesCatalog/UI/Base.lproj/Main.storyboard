@@ -1,24 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Detail-->
+        <scene sceneID="oCY-dY-vN4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="DetailViewController" title="Detail" id="zgv-a4-Dht" customClass="DetailViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I24-YG-2JD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date&amp;time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0i-fp-lWc">
+                                <rect key="frame" x="130" y="318" width="116.5" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E0i-fp-lWc" firstAttribute="centerY" secondItem="I24-YG-2JD" secondAttribute="centerY" id="Mj4-8a-Rk3"/>
+                            <constraint firstItem="E0i-fp-lWc" firstAttribute="centerX" secondItem="I24-YG-2JD" secondAttribute="centerX" id="eCz-hM-iDe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aEs-GZ-EVO"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="E0i-fp-lWc" id="cWl-8x-Dza"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsF-0e-ARM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="-481"/>
+        </scene>
+        <!--Empty View Controller-->
+        <scene sceneID="TJh-FT-8Uv">
+            <objects>
+                <viewController storyboardIdentifier="EmptyViewController" id="mII-LP-KYg" customClass="EmptyViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cC8-S4-8Sp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(empty)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4u-go-z8J">
+                                <rect key="frame" x="157" y="323" width="60.5" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q4u-go-z8J" firstAttribute="centerX" secondItem="cC8-S4-8Sp" secondAttribute="centerX" id="YDD-By-PQI"/>
+                            <constraint firstItem="Q4u-go-z8J" firstAttribute="centerY" secondItem="cC8-S4-8Sp" secondAttribute="centerY" id="uJX-NE-K5Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CeM-ke-QBj"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHk-0O-J8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2009" y="-482"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="wOq-m7-g5L">
+            <objects>
+                <viewController storyboardIdentifier="ListViewController" id="fH9-k6-TPr" customClass="ListViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVV-ww-m3w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It2-ZS-0Hp">
+                                <rect key="frame" x="162.5" y="318" width="50" height="30"/>
+                                <state key="normal" title="Tap me"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="fH9-k6-TPr" eventType="touchUpInside" id="oro-vW-Xvi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="It2-ZS-0Hp" firstAttribute="centerX" secondItem="NVV-ww-m3w" secondAttribute="centerX" id="5yr-ox-v0K"/>
+                            <constraint firstItem="It2-ZS-0Hp" firstAttribute="centerY" secondItem="NVV-ww-m3w" secondAttribute="centerY" id="l19-lu-bgq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="swQ-Jv-IOB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feed" id="JGf-hM-Gtb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XwV-hc-wIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="-480"/>
         </scene>
     </scenes>
 </document>

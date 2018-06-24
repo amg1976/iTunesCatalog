@@ -12,7 +12,7 @@
 		2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937120DF9E93004730F3 /* ResourceFactory.swift */; };
 		2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937420DF9EC9004730F3 /* ClientApi.swift */; };
 		209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69BF20D85AE900C0CB9D /* AppDelegate.swift */; };
-		209F69C220D85AE900C0CB9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69C120D85AE900C0CB9D /* ViewController.swift */; };
+		209F69C220D85AE900C0CB9D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69C120D85AE900C0CB9D /* DetailViewController.swift */; };
 		209F69C520D85AE900C0CB9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C320D85AE900C0CB9D /* Main.storyboard */; };
 		209F69C720D85AEB00C0CB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C620D85AEB00C0CB9D /* Assets.xcassets */; };
 		209F69CA20D85AEB00C0CB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C820D85AEB00C0CB9D /* LaunchScreen.storyboard */; };
@@ -29,6 +29,10 @@
 		729B8DE120E0201400ED65A4 /* invalid_feed_item.json in Resources */ = {isa = PBXBuildFile; fileRef = 729B8DE020E0201400ED65A4 /* invalid_feed_item.json */; };
 		729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE220E03C5100ED65A4 /* Movie.swift */; };
 		729B8DE520E03C5800ED65A4 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE420E03C5800ED65A4 /* Song.swift */; };
+		729B8DE920E044CD00ED65A4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE820E044CD00ED65A4 /* ListViewController.swift */; };
+		729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DEB20E0475B00ED65A4 /* AppCoordinator.swift */; };
+		729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DED20E04F3700ED65A4 /* ListCoordinator.swift */; };
+		729B8DF120E052BF00ED65A4 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DF020E052BF00ED65A4 /* EmptyViewController.swift */; };
 		887F9EC19F7845A0442CB1B7 /* Pods_iTunesCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +54,7 @@
 		2009937420DF9EC9004730F3 /* ClientApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
 		209F69BC20D85AE900C0CB9D /* iTunesCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F69BF20D85AE900C0CB9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		209F69C120D85AE900C0CB9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		209F69C120D85AE900C0CB9D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		209F69C420D85AE900C0CB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209F69C620D85AEB00C0CB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209F69C920D85AEB00C0CB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,10 @@
 		729B8DE020E0201400ED65A4 /* invalid_feed_item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalid_feed_item.json; sourceTree = "<group>"; };
 		729B8DE220E03C5100ED65A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		729B8DE420E03C5800ED65A4 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		729B8DE820E044CD00ED65A4 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		729B8DEB20E0475B00ED65A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		729B8DED20E04F3700ED65A4 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		729B8DF020E052BF00ED65A4 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		A3F5AA94D4D49CE8BBAEF83C /* Pods-iTunesCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesCatalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesCatalog/Pods-iTunesCatalog.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -153,6 +161,7 @@
 		209F69BE20D85AE900C0CB9D /* iTunesCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				729B8DEA20E0474900ED65A4 /* Coordinators */,
 				72207D7120E007D3003F2554 /* Controllers */,
 				2009936E20DF9E4A004730F3 /* Models */,
 				2009936A20DF9D34004730F3 /* Services */,
@@ -200,8 +209,10 @@
 		72207D7120E007D3003F2554 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				209F69C120D85AE900C0CB9D /* ViewController.swift */,
 				72207D7220E007DF003F2554 /* App */,
+				729B8DE720E044A400ED65A4 /* Detail */,
+				729B8DEF20E052A600ED65A4 /* Empty */,
+				729B8DE620E0449A00ED65A4 /* List */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +249,39 @@
 				729B8DD320E01A9600ED65A4 /* Result.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		729B8DE620E0449A00ED65A4 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				729B8DE820E044CD00ED65A4 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		729B8DE720E044A400ED65A4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				209F69C120D85AE900C0CB9D /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		729B8DEA20E0474900ED65A4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				729B8DEB20E0475B00ED65A4 /* AppCoordinator.swift */,
+				729B8DED20E04F3700ED65A4 /* ListCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		729B8DEF20E052A600ED65A4 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				729B8DF020E052BF00ED65A4 /* EmptyViewController.swift */,
+			);
+			path = Empty;
 			sourceTree = "<group>";
 		};
 		EAAE641C3685542FF275BC96 /* Frameworks */ = {
@@ -391,15 +435,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */,
 				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,
 				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
+				729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */,
 				729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */,
 				2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */,
 				729B8DE520E03C5800ED65A4 /* Song.swift in Sources */,
+				729B8DE920E044CD00ED65A4 /* ListViewController.swift in Sources */,
 				2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */,
 				2009936D20DF9D61004730F3 /* Resource.swift in Sources */,
-				209F69C220D85AE900C0CB9D /* ViewController.swift in Sources */,
+				209F69C220D85AE900C0CB9D /* DetailViewController.swift in Sources */,
 				729B8DD420E01A9600ED65A4 /* Result.swift in Sources */,
+				729B8DF120E052BF00ED65A4 /* EmptyViewController.swift in Sources */,
 				209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
