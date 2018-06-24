@@ -42,6 +42,15 @@ extension Resource where T: Codable {
         }
     }
     
+    /// Helper method to parse a string in the JSON format
+    ///
+    /// - Parameter jsonString: the string with the JSON to decode
+    /// - Returns: an instance of T or nil if it can't decode the string
+    func parse(jsonString: String) -> T? {
+        guard let jsonData = jsonString.data(using: .utf8) else { return nil }
+        return parse(jsonData)
+    }
+
 }
 
 extension URLRequest {

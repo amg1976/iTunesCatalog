@@ -1,0 +1,1249 @@
+{
+    "feed": {
+        "title": "Today's Hits",
+        "id": "https://rss.itunes.apple.com/api/v1/ie/itunes-music/hot-tracks/all/50/explicit.json",
+        "author": {
+            "name": "iTunes Store",
+            "uri": "http://wwww.apple.com/ie/itunes/"
+        },
+        "links": [
+                  {
+                  "self": "https://rss.itunes.apple.com/api/v1/ie/itunes-music/hot-tracks/all/50/explicit.json"
+                  },
+                  {
+                  "alternate": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewRoom?fcId=880121519&app=itunes"
+                  }
+                  ],
+        "copyright": "Copyright © 2018 Apple Inc. Todos los derechos reservados.",
+        "country": "ie",
+        "icon": "http://itunes.apple.com/favicon.ico",
+        "updated": "2018-06-23T01:48:29.000-07:00",
+        "results": [
+                    {
+                    "artistName": "George Ezra",
+                    "id": "1331589486",
+                    "releaseDate": "2018-03-23",
+                    "name": "Shotgun",
+                    "collectionName": "Staying at Tamara's",
+                    "kind": "song",
+                    "artistId": "705812852",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/george-ezra/705812852?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/a9/5c/67/a95c6764-ccf4-2e23-0a63-06332d2a2f98/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "10",
+                               "name": "Singer/Songwriter",
+                               "url": "https://itunes.apple.com/ie/genre/id10"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/shotgun/1331589118?i=1331589486&app=itunes"
+                    },
+                    {
+                    "artistName": "Clean Bandit",
+                    "id": "1380753466",
+                    "releaseDate": "2018-05-18",
+                    "name": "Solo (feat. Demi Lovato)",
+                    "collectionName": "Solo (feat. Demi Lovato) - Single",
+                    "kind": "song",
+                    "artistId": "463049461",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/clean-bandit/463049461?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/82/84/1c/82841c1c-0abd-f9a5-ad67-3b45918ce0c9/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               },
+                               {
+                               "genreId": "7",
+                               "name": "Electronic",
+                               "url": "https://itunes.apple.com/ie/genre/id7"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/solo-feat-demi-lovato/1380752874?i=1380753466&app=itunes"
+                    },
+                    {
+                    "artistName": "Cheat Codes & Little Mix",
+                    "id": "1400796410",
+                    "releaseDate": "2018-06-22",
+                    "name": "Only You",
+                    "collectionName": "Only You - Single",
+                    "kind": "song",
+                    "artistId": "957521979",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=957521979-477515548&app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a2/39/e0/a239e084-a99a-23a4-f6ea-ce11a95252e9/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/only-you/1400796156?i=1400796410&app=itunes"
+                    },
+                    {
+                    "artistName": "Anne-Marie",
+                    "id": "1350388932",
+                    "releaseDate": "2018-04-20",
+                    "name": "2002",
+                    "collectionName": "Speak Your Mind (Deluxe)",
+                    "kind": "song",
+                    "artistId": "474724108",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/anne-marie/474724108?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/11/e3/9b/11e39b36-23a7-5a0e-83dd-86c41ef372d1/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/2002/1350388262?i=1350388932&app=itunes"
+                    },
+                    {
+                    "artistName": "George Ezra",
+                    "id": "1331589488",
+                    "releaseDate": "2018-01-19",
+                    "name": "Paradise",
+                    "collectionName": "Staying at Tamara's",
+                    "kind": "song",
+                    "artistId": "705812852",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/george-ezra/705812852?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/a9/5c/67/a95c6764-ccf4-2e23-0a63-06332d2a2f98/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "10",
+                               "name": "Singer/Songwriter",
+                               "url": "https://itunes.apple.com/ie/genre/id10"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/paradise/1331589118?i=1331589488&app=itunes"
+                    },
+                    {
+                    "artistName": "Jess Glynne",
+                    "id": "1376767301",
+                    "releaseDate": "2018-05-04",
+                    "name": "I'll Be There",
+                    "collectionName": "I'll Be There - Single",
+                    "kind": "song",
+                    "artistId": "704309129",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/jess-glynne/704309129?app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/67/f3/e7/67f3e714-fba7-9e32-533e-e2ee16a85ff6/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/ill-be-there/1376766204?i=1376767301&app=itunes"
+                    },
+                    {
+                    "artistName": "Cardi B, Bad Bunny & J Balvin",
+                    "id": "1368157211",
+                    "releaseDate": "2018-04-06",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "I Like It",
+                    "collectionName": "Invasion of Privacy",
+                    "kind": "song",
+                    "artistId": "956078923",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=956078923-1126808565-444520760&app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/30/f9/52/30f952dd-d4cd-a9be-907c-d66bf19bfe23/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/i-like-it/1368156323?i=1368157211&app=itunes"
+                    },
+                    {
+                    "artistName": "Dennis Lloyd",
+                    "id": "1242284189",
+                    "releaseDate": "2016-12-05",
+                    "name": "Nevermind",
+                    "collectionName": "Nevermind - Single",
+                    "kind": "song",
+                    "artistId": "1266061375",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/dennis-lloyd/1266061375?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/57/8b/76/578b762e-63cf-4cee-cb48-95929b1759c3/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/nevermind/1242284010?i=1242284189&app=itunes"
+                    },
+                    {
+                    "artistName": "Selena Gomez",
+                    "id": "1381915969",
+                    "releaseDate": "2018-05-10",
+                    "name": "Back to You",
+                    "collectionName": "13 Reasons Why: Season 2 (Music from the Original TV Series)",
+                    "kind": "song",
+                    "artistId": "280215834",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/selena-gomez/280215834?app=itunes",
+                    "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/39/81/86/398186b5-4a26-617e-64d5-3e97512864a6/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/back-to-you/1381914023?i=1381915969&app=itunes"
+                    },
+                    {
+                    "artistName": "Ariana Grande",
+                    "id": "1374087460",
+                    "releaseDate": "2018-04-20",
+                    "name": "no tears left to cry",
+                    "collectionName": "no tears left to cry - Single",
+                    "kind": "song",
+                    "artistId": "412778295",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/ariana-grande/412778295?app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/73/fd/20/73fd209d-1f38-88e2-f0aa-ef3a4b674eb6/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/no-tears-left-to-cry/1374085537?i=1374087460&app=itunes"
+                    },
+                    {
+                    "artistName": "David Guetta & Sia",
+                    "id": "1358284336",
+                    "releaseDate": "2018-03-22",
+                    "name": "Flames",
+                    "collectionName": "Flames - Single",
+                    "kind": "song",
+                    "artistId": "5557599",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=5557599-13493906&app=itunes",
+                    "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music62/v4/3d/05/9f/3d059f37-2a72-09a4-6e75-f74ced67efe9/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/flames/1358283970?i=1358284336&app=itunes"
+                    },
+                    {
+                    "artistName": "Calvin Harris, Dua Lipa",
+                    "id": "1364709436",
+                    "releaseDate": "2018-04-06",
+                    "name": "One Kiss",
+                    "collectionName": "One Kiss - Single",
+                    "kind": "song",
+                    "artistId": "201955086",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=201955086-1031397873&app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/c6/ea/bc/c6eabcad-394d-d85d-f653-8e171dc67339/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/one-kiss/1364709432?i=1364709436&app=itunes"
+                    },
+                    {
+                    "artistName": "Sigala & Paloma Faith",
+                    "id": "1346207366",
+                    "releaseDate": "2018-02-23",
+                    "name": "Lullaby",
+                    "collectionName": "Lullaby - Single",
+                    "kind": "song",
+                    "artistId": "912773746",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=912773746-298591627&app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/3e/bd/39/3ebd39f7-6c4f-b015-e8be-37b601ebde12/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/lullaby/1346207355?i=1346207366&app=itunes"
+                    },
+                    {
+                    "artistName": "Jonas Blue",
+                    "id": "1383852262",
+                    "releaseDate": "2018-05-25",
+                    "name": "Rise (feat. Jack & Jack)",
+                    "collectionName": "Rise (feat. Jack & Jack) - Single",
+                    "kind": "song",
+                    "artistId": "405728790",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/jonas-blue/405728790?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/63/3c/66/633c667d-9d82-cd41-5bf0-2f8941776843/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/rise-feat-jack-jack/1383852254?i=1383852262&app=itunes"
+                    },
+                    {
+                    "artistName": "Florence + The Machine",
+                    "id": "1377117889",
+                    "releaseDate": "2018-05-02",
+                    "name": "Hunger",
+                    "collectionName": "High As Hope",
+                    "kind": "song",
+                    "artistId": "281070699",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/florence-the-machine/281070699?app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/97/32/61/973261c3-59ef-3d79-afa5-94a3b8316649/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "20",
+                               "name": "Alternative",
+                               "url": "https://itunes.apple.com/ie/genre/id20"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/hunger/1377116938?i=1377117889&app=itunes"
+                    },
+                    {
+                    "artistName": "Years & Years",
+                    "id": "1373789726",
+                    "releaseDate": "2018-06-08",
+                    "name": "If You're Over Me",
+                    "collectionName": "Palo Santo (Deluxe)",
+                    "kind": "song",
+                    "artistId": "910604189",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/years-years/910604189?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/8e/e4/38/8ee438f7-0a0a-d899-fc32-01d6c9443f55/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "7",
+                               "name": "Electronic",
+                               "url": "https://itunes.apple.com/ie/genre/id7"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/if-youre-over-me/1373788921?i=1373789726&app=itunes"
+                    },
+                    {
+                    "artistName": "Kodaline",
+                    "id": "1356671012",
+                    "releaseDate": "2018-03-23",
+                    "name": "Follow Your Fire",
+                    "collectionName": "Follow Your Fire - Single",
+                    "kind": "song",
+                    "artistId": "553502464",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/kodaline/553502464?app=itunes",
+                    "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/83/ae/dd/83aedd08-f0e2-36f1-4413-6dd250dae651/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "20",
+                               "name": "Alternative",
+                               "url": "https://itunes.apple.com/ie/genre/id20"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/follow-your-fire/1356671005?i=1356671012&app=itunes"
+                    },
+                    {
+                    "artistName": "Liam Payne & J Balvin",
+                    "id": "1368945549",
+                    "releaseDate": "2018-04-20",
+                    "name": "Familiar",
+                    "collectionName": "Familiar - Single",
+                    "kind": "song",
+                    "artistId": "366710817",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=366710817-444520760&app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/2f/5c/4a/2f5c4a26-6573-df99-dc4a-29b01abf8b59/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/familiar/1368945168?i=1368945549&app=itunes"
+                    },
+                    {
+                    "artistName": "Post Malone",
+                    "id": "1373517313",
+                    "releaseDate": "2018-04-27",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Better Now",
+                    "collectionName": "beerbongs & bentleys",
+                    "kind": "song",
+                    "artistId": "966309175",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/post-malone/966309175?app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/41/c0/1a/41c01a78-cdfa-0c06-4b9b-8e00bf07aaad/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/better-now/1373516902?i=1373517313&app=itunes"
+                    },
+                    {
+                    "artistName": "Gavin James",
+                    "id": "1367255431",
+                    "releaseDate": "2018-04-13",
+                    "name": "Always",
+                    "collectionName": "Always - Single",
+                    "kind": "song",
+                    "artistId": "734746437",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/gavin-james/734746437?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music62/v4/77/45/24/774524db-bbf4-169d-084f-e13d49e2a9d6/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "20",
+                               "name": "Alternative",
+                               "url": "https://itunes.apple.com/ie/genre/id20"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/always/1367255429?i=1367255431&app=itunes"
+                    },
+                    {
+                    "artistName": "Rudimental",
+                    "id": "1332733034",
+                    "releaseDate": "2018-01-19",
+                    "name": "These Days (feat. Jess Glynne, Macklemore & Dan Caplen)",
+                    "collectionName": "These Days (feat. Jess Glynne, Macklemore & Dan Caplen)",
+                    "kind": "song",
+                    "artistId": "474022504",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/rudimental/474022504?app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/bd/7e/b4/bd7eb44b-6445-2027-15c9-570eaf0e1373/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/these-days-feat-jess-glynne-macklemore-dan-caplen/1332732832?i=1332733034&app=itunes"
+                    },
+                    {
+                    "artistName": "Tom Walker",
+                    "id": "1289368769",
+                    "releaseDate": "2017-10-13",
+                    "name": "Leave a Light On",
+                    "collectionName": "Leave a Light On - Single",
+                    "kind": "song",
+                    "artistId": "1199669456",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/tom-walker/1199669456?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/dd/74/75/dd747508-c1d7-81b4-8aaa-878f0b7603cf/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "20",
+                               "name": "Alternative",
+                               "url": "https://itunes.apple.com/ie/genre/id20"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/leave-a-light-on/1289368758?i=1289368769&app=itunes"
+                    },
+                    {
+                    "artistName": "Bebe Rexha & Florida Georgia Line",
+                    "id": "1251713725",
+                    "releaseDate": "2017-08-11",
+                    "name": "Meant to Be",
+                    "collectionName": "All Your Fault, Pt. 2 - EP",
+                    "kind": "song",
+                    "artistId": "466059563",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=466059563-399241518&app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/65/c7/d0/65c7d06b-58ab-8455-6c30-7fe91b6ef827/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/meant-to-be/1251713683?i=1251713725&app=itunes"
+                    },
+                    {
+                    "artistName": "The Carters",
+                    "id": "1400118055",
+                    "releaseDate": "2018-06-16",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "APESHIT",
+                    "collectionName": "EVERYTHING IS LOVE",
+                    "kind": "song",
+                    "artistId": "334089123",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/the-carters/334089123?app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/3c/61/c8/3c61c8cd-2777-67ac-083e-6970eb799ae1/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/apeshit/1400117883?i=1400118055&app=itunes"
+                    },
+                    {
+                    "artistName": "Jax Jones & Mabel",
+                    "id": "1399007272",
+                    "releaseDate": "2018-06-22",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Ring Ring (feat. Rich The Kid)",
+                    "collectionName": "Ring Ring (feat. Rich The Kid) - Single",
+                    "kind": "song",
+                    "artistId": "781088995",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=781088995-1056294097&app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/78/86/72/78867253-025b-f77b-713d-46fb0473b548/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/ring-ring-feat-rich-the-kid/1399006084?i=1399007272&app=itunes"
+                    },
+                    {
+                    "artistName": "Maroon 5",
+                    "id": "1381589780",
+                    "releaseDate": "2018-05-30",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Girls Like You (feat. Cardi B)",
+                    "collectionName": "Girls Like You (feat. Cardi B) - Single",
+                    "kind": "song",
+                    "artistId": "1798556",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/maroon-5/1798556?app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/a4/79/e7/a479e75e-42a2-45f5-2d88-c743c9f4535c/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/girls-like-you-feat-cardi-b/1381588297?i=1381589780&app=itunes"
+                    },
+                    {
+                    "artistName": "Sigrid",
+                    "id": "1365981436",
+                    "releaseDate": "2018-04-12",
+                    "name": "High Five",
+                    "collectionName": "Raw - Single",
+                    "kind": "song",
+                    "artistId": "1206070304",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/sigrid/1206070304?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/7e/c8/84/7ec884f8-4ee1-7538-7593-e62f70aefbd0/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/high-five/1365980729?i=1365981436&app=itunes"
+                    },
+                    {
+                    "artistName": "Lil Dicky",
+                    "id": "1351005400",
+                    "releaseDate": "2018-02-27",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Freaky Friday (feat. Chris Brown)",
+                    "collectionName": "Freaky Friday (feat. Chris Brown) - Single",
+                    "kind": "song",
+                    "artistId": "667590649",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/lil-dicky/667590649?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/ce/3e/5f/ce3e5f68-dd7e-3016-77ac-1306ec741b1c/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/freaky-friday-feat-chris-brown/1351005381?i=1351005400&app=itunes"
+                    },
+                    {
+                    "artistName": "Drake",
+                    "id": "1369422581",
+                    "releaseDate": "2018-04-06",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Nice For What",
+                    "collectionName": "Nice For What - Single",
+                    "kind": "song",
+                    "artistId": "271256",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/drake/271256?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/d0/76/ec/d076ec98-e18d-ccc2-f609-2810e78734e2/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/nice-for-what/1369422438?i=1369422581&app=itunes"
+                    },
+                    {
+                    "artistName": "Picture This",
+                    "id": "1359267179",
+                    "releaseDate": "2018-03-23",
+                    "name": "This Morning",
+                    "collectionName": "This Morning - Single",
+                    "kind": "song",
+                    "artistId": "1194282721",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/picture-this/1194282721?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/a1/ce/99/a1ce995b-2dc3-6738-9a34-a7cddef3fab3/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "20",
+                               "name": "Alternative",
+                               "url": "https://itunes.apple.com/ie/genre/id20"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/this-morning/1359267168?i=1359267179&app=itunes"
+                    },
+                    {
+                    "artistName": "NOTD",
+                    "id": "1357067766",
+                    "releaseDate": "2018-03-16",
+                    "name": "I Wanna Know (feat. Bea Miller)",
+                    "collectionName": "I Wanna Know (feat. Bea Miller) - Single",
+                    "kind": "song",
+                    "artistId": "1192369008",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/notd/1192369008?app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f8/23/dc/f823dc25-79d8-0780-a949-c155fd2ae11e/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/i-wanna-know-feat-bea-miller/1357067762?i=1357067766&app=itunes"
+                    },
+                    {
+                    "artistName": "Banx & Ranx & Ella Eyre",
+                    "id": "1351894695",
+                    "releaseDate": "2018-03-16",
+                    "name": "Answerphone (feat. Yxng Bane)",
+                    "collectionName": "Answerphone (feat. Yxng Bane) - Single",
+                    "kind": "song",
+                    "artistId": "915349787",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=915349787-631307211&app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/37/2d/ad/372dad24-d5b2-b718-fa1a-1d68f6f189b7/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               },
+                               {
+                               "genreId": "7",
+                               "name": "Electronic",
+                               "url": "https://itunes.apple.com/ie/genre/id7"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/answerphone-feat-yxng-bane/1351894443?i=1351894695&app=itunes"
+                    },
+                    {
+                    "artistName": "Zedd, Maren Morris & Grey",
+                    "id": "1336771388",
+                    "releaseDate": "2018-01-23",
+                    "name": "The Middle",
+                    "collectionName": "The Middle - Single",
+                    "kind": "song",
+                    "artistId": "368433979",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=368433979-262260873-324853&app=itunes",
+                    "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/77/46/b1/7746b1dd-2ffb-e0c0-fbe9-ac6bda11c65e/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/the-middle/1336771022?i=1336771388&app=itunes"
+                    },
+                    {
+                    "artistName": "Kygo & Imagine Dragons",
+                    "id": "1397556701",
+                    "releaseDate": "2018-06-15",
+                    "name": "Born to Be Yours",
+                    "collectionName": "Born to Be Yours - Single",
+                    "kind": "song",
+                    "artistId": "635806094",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=635806094-358714030&app=itunes",
+                    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/a9/9b/0d/a99b0dcd-033a-869c-454e-a118ac2d7cbe/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/born-to-be-yours/1397556567?i=1397556701&app=itunes"
+                    },
+                    {
+                    "artistName": "Martin Garrix",
+                    "id": "1397556695",
+                    "releaseDate": "2018-06-15",
+                    "name": "Ocean (feat. Khalid)",
+                    "collectionName": "Ocean (feat. Khalid) - Single",
+                    "kind": "song",
+                    "artistId": "430932944",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/martin-garrix/430932944?app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/90/5b/64905b06-b977-033e-6f86-cec476ff8298/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/ocean-feat-khalid/1397556679?i=1397556695&app=itunes"
+                    },
+                    {
+                    "artistName": "Alessia Cara",
+                    "id": "1396277922",
+                    "releaseDate": "2018-06-15",
+                    "name": "Growing Pains",
+                    "collectionName": "Growing Pains - Single",
+                    "kind": "song",
+                    "artistId": "991444375",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/alessia-cara/991444375?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/70/f0/02/70f00241-d3f7-c1bd-fba2-e332c9861a8d/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/growing-pains/1396277076?i=1396277922&app=itunes"
+                    },
+                    {
+                    "artistName": "The 1975",
+                    "id": "1389783376",
+                    "releaseDate": "2018-05-31",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Give Yourself A Try",
+                    "collectionName": "Give Yourself A Try - Single",
+                    "kind": "song",
+                    "artistId": "542640016",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/the-1975/542640016?app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cb/d1/77/cbd177d5-2176-e923-f670-0ded6eacbdf3/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "20",
+                               "name": "Alternative",
+                               "url": "https://itunes.apple.com/ie/genre/id20"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/give-yourself-a-try/1389783331?i=1389783376&app=itunes"
+                    },
+                    {
+                    "artistName": "A$AP Rocky",
+                    "id": "1387635035",
+                    "releaseDate": "2018-05-25",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Praise the Lord (Da Shine) [feat. Skepta]",
+                    "collectionName": "TESTING",
+                    "kind": "song",
+                    "artistId": "481488005",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/a%24ap-rocky/481488005?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/ae/62/68/ae6268f3-6430-3936-a4f0-1d8065533c56/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/praise-the-lord-da-shine-feat-skepta/1387635013?i=1387635035&app=itunes"
+                    },
+                    {
+                    "artistName": "Juice WRLD",
+                    "id": "1387601404",
+                    "releaseDate": "2017-06-15",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Lucid Dreams",
+                    "collectionName": "Goodbye & Good Riddance",
+                    "kind": "song",
+                    "artistId": "1368733420",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/juice-wrld/1368733420?app=itunes",
+                    "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/d2/fa/91/d2fa9128-17e4-cc4a-d57d-6a4c31c08a38/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/lucid-dreams/1387601386?i=1387601404&app=itunes"
+                    },
+                    {
+                    "artistName": "AJ Tracey & Not3s",
+                    "id": "1386197621",
+                    "releaseDate": "2018-05-30",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Butterflies",
+                    "collectionName": "Butterflies - Single",
+                    "kind": "song",
+                    "artistId": "1065154423",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=1065154423-1175886072&app=itunes",
+                    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b1/58/ad/b158ad67-f889-9471-25a4-6dfb6a827653/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/butterflies/1386196778?i=1386197621&app=itunes"
+                    },
+                    {
+                    "artistName": "Stefflon Don",
+                    "id": "1383298311",
+                    "releaseDate": "2018-05-18",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Senseless",
+                    "collectionName": "Senseless - Single",
+                    "kind": "song",
+                    "artistId": "543629340",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/stefflon-don/543629340?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/69/9f/0d/699f0d0b-fc49-46ac-8a88-b1f3a30b5390/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/senseless/1383298056?i=1383298311&app=itunes"
+                    },
+                    {
+                    "artistName": "Rita Ora",
+                    "id": "1380719221",
+                    "releaseDate": "2018-05-11",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Girls (feat. Cardi B, Bebe Rexha & Charli XCX)",
+                    "collectionName": "Girls (feat. Cardi B, Bebe Rexha & Charli XCX) - Single",
+                    "kind": "song",
+                    "artistId": "355898104",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/rita-ora/355898104?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/4d/0d/d8/4d0dd8fe-f33e-8fd5-d4c1-92b190f4d2c7/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/girls-feat-cardi-b-bebe-rexha-charli-xcx/1380718853?i=1380719221&app=itunes"
+                    },
+                    {
+                    "artistName": "Shawn Mendes",
+                    "id": "1376116250",
+                    "releaseDate": "2018-05-03",
+                    "name": "Youth (feat. Khalid)",
+                    "collectionName": "Shawn Mendes",
+                    "kind": "song",
+                    "artistId": "890403665",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/shawn-mendes/890403665?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/bb/ca/eb/bbcaeb6e-c981-15c1-2d5d-ffc0935d27b7/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/youth-feat-khalid/1376115721?i=1376116250&app=itunes"
+                    },
+                    {
+                    "artistName": "Shawn Mendes",
+                    "id": "1376115726",
+                    "releaseDate": "2018-05-25",
+                    "name": "Nervous",
+                    "collectionName": "Shawn Mendes",
+                    "kind": "song",
+                    "artistId": "890403665",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/shawn-mendes/890403665?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/bb/ca/eb/bbcaeb6e-c981-15c1-2d5d-ffc0935d27b7/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/nervous/1376115721?i=1376115726&app=itunes"
+                    },
+                    {
+                    "artistName": "Jorja Smith",
+                    "id": "1373567936",
+                    "releaseDate": "2016-02-26",
+                    "name": "Blue Lights",
+                    "collectionName": "Lost & Found",
+                    "kind": "song",
+                    "artistId": "1088331223",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/jorja-smith/1088331223?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/d4/be/89/d4be8988-dd4b-913d-7c05-0db1757a396a/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "15",
+                               "name": "R&B/Soul",
+                               "url": "https://itunes.apple.com/ie/genre/id15"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/blue-lights/1373567754?i=1373567936&app=itunes"
+                    },
+                    {
+                    "artistName": "5 Seconds of Summer",
+                    "id": "1369109665",
+                    "releaseDate": "2018-04-13",
+                    "name": "Youngblood",
+                    "collectionName": "Youngblood",
+                    "kind": "song",
+                    "artistId": "538811449",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/5-seconds-of-summer/538811449?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/da/24/06/da24061b-025e-81d8-d582-a2c77936cd2f/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "14",
+                               "name": "Pop",
+                               "url": "https://itunes.apple.com/ie/genre/id14"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/youngblood/1369109452?i=1369109665&app=itunes"
+                    },
+                    {
+                    "artistName": "EO",
+                    "id": "1365785690",
+                    "releaseDate": "2018-04-06",
+                    "name": "German",
+                    "collectionName": "German - Single",
+                    "kind": "song",
+                    "artistId": "1108579710",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/eo/1108579710?app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/e5/bb/9c/e5bb9c04-8212-b783-6320-34b5dcf5b57a/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/german/1365785687?i=1365785690&app=itunes"
+                    },
+                    {
+                    "artistName": "Au/Ra & CamelPhat",
+                    "id": "1364107062",
+                    "releaseDate": "2018-03-29",
+                    "name": "Panic Room",
+                    "collectionName": "Panic Room - Single",
+                    "kind": "song",
+                    "artistId": "1160086543",
+                    "artistUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewCollaboration?cc=ie&ids=1160086543-385810888&app=itunes",
+                    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/90/8b/c5/908bc5ac-3ff7-8c98-b38e-66baa768372f/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "17",
+                               "name": "Dance",
+                               "url": "https://itunes.apple.com/ie/genre/id17"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/panic-room/1364106840?i=1364107062&app=itunes"
+                    },
+                    {
+                    "artistName": "Yxng Bane",
+                    "id": "1358682870",
+                    "releaseDate": "2018-03-16",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Vroom",
+                    "collectionName": "Vroom - Single",
+                    "kind": "song",
+                    "artistId": "1017327173",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/yxng-bane/1017327173?app=itunes",
+                    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/2b/15/27/2b15277d-3755-fce8-c477-5b7371b7553a/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/vroom/1358682868?i=1358682870&app=itunes"
+                    },
+                    {
+                    "artistName": "Shakka",
+                    "id": "1343288877",
+                    "releaseDate": "2018-02-16",
+                    "contentAdvisoryRating": "Explicit",
+                    "name": "Man Down (feat. AlunaGeorge)",
+                    "collectionName": "Man Down (feat. AlunaGeorge) - Single",
+                    "kind": "song",
+                    "artistId": "66674911",
+                    "artistUrl": "https://itunes.apple.com/ie/artist/shakka/66674911?app=itunes",
+                    "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/5d/fb/d6/5dfbd671-29af-ac82-965e-41e57a34f108/source/200x200bb.png",
+                    "genres": [
+                               {
+                               "genreId": "18",
+                               "name": "Hip-Hop/Rap",
+                               "url": "https://itunes.apple.com/ie/genre/id18"
+                               },
+                               {
+                               "genreId": "34",
+                               "name": "Music",
+                               "url": "https://itunes.apple.com/ie/genre/id34"
+                               }
+                               ],
+                    "url": "https://itunes.apple.com/ie/album/man-down-feat-alunageorge/1343288493?i=1343288877&app=itunes"
+                    }
+                    ]
+    }
+}
