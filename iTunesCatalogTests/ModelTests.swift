@@ -18,7 +18,11 @@ class ModelTests: XCTestCase {
         XCTAssertNotNil(list)
         XCTAssertEqual(list!.feed.title, "Top Films")
         XCTAssertEqual(list!.feed.results.count, 50)
-        XCTAssertEqual(list!.feed.results.first!.name, "Black Panther (2018)")
+        
+        let firstItem = list!.feed.results.first!
+        XCTAssertEqual(firstItem.id, "1342077359")
+        XCTAssertEqual(firstItem.name, "Black Panther (2018)")
+        XCTAssertEqual(firstItem.url, "https://itunes.apple.com/ie/movie/black-panther-2018/id1342077359")
     }
 
     func testParseSongs() {
@@ -29,7 +33,13 @@ class ModelTests: XCTestCase {
         XCTAssertNotNil(list)
         XCTAssertEqual(list!.feed.title, "Today's Hits")
         XCTAssertEqual(list!.feed.results.count, 50)
-        XCTAssertEqual(list!.feed.results.first!.name, "Shotgun")
+
+        let firstItem = list!.feed.results.first!
+        XCTAssertEqual(firstItem.id, "1331589486")
+        XCTAssertEqual(firstItem.name, "Shotgun")
+        XCTAssertEqual(firstItem.url, "https://itunes.apple.com/ie/album/shotgun/1331589118?i=1331589486&app=itunes")
+        XCTAssertEqual(firstItem.artistName, "George Ezra")
+        XCTAssertEqual(firstItem.collectionName, "Staying at Tamara's")
     }
 
 }

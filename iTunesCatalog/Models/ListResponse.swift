@@ -8,13 +8,31 @@
 
 import Foundation
 
+/// Declares the base properties of a Feed item
+protocol Item: Codable {
+    var id: String { get }
+    var name: String { get }
+    var url: String { get }
+}
+
+/// Song model
+struct Song: Item {
+    let id: String
+    let name: String
+    let url: String
+    let artistName: String
+    let collectionName: String
+}
+
+/// Movie model
+struct Movie: Item {
+    let id: String
+    let name: String
+    let url: String
+}
+
 /// Models the root element of the ListResponse object
-struct Feed: Codable {
-    
-    /// Models an item from the `results` property
-    struct Item: Codable {
-        var name: String
-    }
+struct Feed<Item: Codable>: Codable {
     
     /// The title of the feed
     var title: String
@@ -24,6 +42,6 @@ struct Feed: Codable {
 }
 
 /// Models the response received from fetching a list Resource
-struct ListResponse: Codable {
-    var feed: Feed
+struct ListResponse<Item: Codable>: Codable {
+    var feed: Feed<Item>
 }

@@ -16,7 +16,7 @@ class ClientApi {
         self.networkService = networkService
     }
     
-    func getVideos(completion: @escaping (ListResponse?) -> Void) {
+    func getMovies(completion: @escaping (ListResponse<Movie>?) -> Void) {
         
         let moviesResource = ResourceFactory.createListMoviesResource()
         

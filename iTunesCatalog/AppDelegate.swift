@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        ClientApi(withNetworkService: NetworkService()).getVideos { movies in
+        ClientApi(withNetworkService: NetworkService()).getMovies { movies in
             print(movies ?? "mo movies")
         }
         
