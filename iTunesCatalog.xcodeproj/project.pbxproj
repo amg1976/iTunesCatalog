@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2009936D20DF9D61004730F3 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009936C20DF9D61004730F3 /* Resource.swift */; };
-		2009937020DF9E5E004730F3 /* ListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009936F20DF9E5E004730F3 /* ListMovies.swift */; };
+		2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009936F20DF9E5E004730F3 /* ListResponse.swift */; };
 		2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937120DF9E93004730F3 /* ResourceFactory.swift */; };
 		2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937420DF9EC9004730F3 /* ClientApi.swift */; };
 		209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69BF20D85AE900C0CB9D /* AppDelegate.swift */; };
@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		07EE542FC93C7FA25B70E07A /* Pods-iTunesCatalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesCatalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesCatalog/Pods-iTunesCatalog.release.xcconfig"; sourceTree = "<group>"; };
 		2009936C20DF9D61004730F3 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		2009936F20DF9E5E004730F3 /* ListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovies.swift; sourceTree = "<group>"; };
+		2009936F20DF9E5E004730F3 /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
 		2009937120DF9E93004730F3 /* ResourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceFactory.swift; sourceTree = "<group>"; };
 		2009937420DF9EC9004730F3 /* ClientApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
 		209F69BC20D85AE900C0CB9D /* iTunesCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +93,7 @@
 		2009936E20DF9E4A004730F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2009936F20DF9E5E004730F3 /* ListMovies.swift */,
+				2009936F20DF9E5E004730F3 /* ListResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2009937020DF9E5E004730F3 /* ListMovies.swift in Sources */,
+				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,
 				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
 				2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */,
 				2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */,
@@ -475,10 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M65H29N762;
 				INFOPLIST_FILE = iTunesCatalog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amg.iTunesCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -495,10 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M65H29N762;
 				INFOPLIST_FILE = iTunesCatalog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amg.iTunesCatalog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -514,11 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M65H29N762;
 				INFOPLIST_FILE = iTunesCatalogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amg.iTunesCatalogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -534,11 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M65H29N762;
 				INFOPLIST_FILE = iTunesCatalogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.amg.iTunesCatalogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
