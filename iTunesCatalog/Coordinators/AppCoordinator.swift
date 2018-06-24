@@ -29,37 +29,48 @@ final class AppCoordinator: FlowCoordinator {
 
         listCoordinator.start()
 
-        let rootController: UIViewController
+        let splitViewController = UISplitViewController(nibName: nil, bundle: nil)
+        splitViewController.delegate = self
+        splitViewController.preferredDisplayMode = .allVisible
+        self.splitViewController = splitViewController
 
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            let emptyViewController = EmptyViewController.create()
-            let splitViewController = UISplitViewController(nibName: nil, bundle: nil)
-            splitViewController.preferredDisplayMode = .allVisible
-            splitViewController.viewControllers = [listCoordinator.navigationController, emptyViewController]
-            rootController = splitViewController
-            self.splitViewController = splitViewController
-        } else {
-            rootController = listCoordinator.navigationController
-        }
+        let emptyViewController = EmptyViewController.create()
+        splitViewController.viewControllers = [listCoordinator.navigationController, emptyViewController]
         
-        window.rootViewController = rootController
+        window.rootViewController = splitViewController
         window.makeKeyAndVisible()
     }
     
 }
 
 extension AppCoordinator: ListCoordinatorDelegate {
-
+    
     func didSelectFeed() {
-
         let detailViewController = DetailViewController.create(withDate: Date())
-
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            splitViewController?.showDetailViewController(detailViewController, sender: nil)
-        } else {
-            listCoordinator.showDetail(detailViewController)
-        }
-
+        splitViewController?.showDetailViewController(detailViewController, sender: nil)
     }
+    
+}
 
+extension AppCoordinator: UISplitViewControllerDelegate {
+    
+    func splitViewController(_ splitViewController: UISplitViewController,
+                             collapseSecondary secondaryViewController: UIViewController,
+                             onto primaryViewController: UIViewController) -> Bool {
+        return true
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController,
+                             showDetail vc: UIViewController,
+                             sender: Any?) -> Bool {
+        
+        if splitViewController.isCollapsed {
+            listCoordinator.showDetail(vc)
+            return true
+        }
+        
+        return false
+        
+    }
+    
 }
