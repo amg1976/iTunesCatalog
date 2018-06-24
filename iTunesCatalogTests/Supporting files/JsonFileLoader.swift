@@ -25,11 +25,24 @@ enum JsonFileLoader {
         return fileContent
     }
     
-    static func loadMovies() -> String {
+    static func movies() -> String {
         return JsonFileLoader.load(resource: "list_movies")
     }
 
-    static func loadSongs() -> String {
+    static func songs() -> String {
         return JsonFileLoader.load(resource: "list_songs")
     }
+
+    static func invalidResponse() -> String {
+        return JsonFileLoader.load(resource: "invalid_response")
+    }
+
+    static func invalidFeed() -> String {
+        return JsonFileLoader.load(resource: "invalid_feed")
+    }
+    
+    static func invalidFeedItem() -> String {
+        return JsonFileLoader.load(resource: "invalid_feed_item")
+    }
+
 }

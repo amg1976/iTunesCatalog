@@ -1,0 +1,21 @@
+{
+    "feed": {
+        "title": "Some feed",
+        "results": [
+                    {
+                    "name": "Item one",
+                    "id": "1",
+                    "url": "some url"
+                    },
+                    {
+                    "name": "Item two",
+                    "id": "2",
+                    "url": "some url"
+                    },
+                    {
+                    "invalid_property": "Item three"
+                    }
+        ]
+    }
+}
+

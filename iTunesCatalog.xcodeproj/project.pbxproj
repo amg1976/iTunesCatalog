@@ -24,6 +24,11 @@
 		729B8DCB20E00AE900ED65A4 /* ClientApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DCA20E00AE900ED65A4 /* ClientApiTests.swift */; };
 		729B8DCD20E011ED00ED65A4 /* MockObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DCC20E011ED00ED65A4 /* MockObjects.swift */; };
 		729B8DD420E01A9600ED65A4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DD320E01A9600ED65A4 /* Result.swift */; };
+		729B8DD720E01E7600ED65A4 /* invalid_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 729B8DD620E01E7600ED65A4 /* invalid_response.json */; };
+		729B8DD920E01ED200ED65A4 /* invalid_feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 729B8DD820E01ED200ED65A4 /* invalid_feed.json */; };
+		729B8DE120E0201400ED65A4 /* invalid_feed_item.json in Resources */ = {isa = PBXBuildFile; fileRef = 729B8DE020E0201400ED65A4 /* invalid_feed_item.json */; };
+		729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE220E03C5100ED65A4 /* Movie.swift */; };
+		729B8DE520E03C5800ED65A4 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE420E03C5800ED65A4 /* Song.swift */; };
 		887F9EC19F7845A0442CB1B7 /* Pods_iTunesCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +65,11 @@
 		729B8DCA20E00AE900ED65A4 /* ClientApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientApiTests.swift; sourceTree = "<group>"; };
 		729B8DCC20E011ED00ED65A4 /* MockObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockObjects.swift; sourceTree = "<group>"; };
 		729B8DD320E01A9600ED65A4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		729B8DD620E01E7600ED65A4 /* invalid_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalid_response.json; sourceTree = "<group>"; };
+		729B8DD820E01ED200ED65A4 /* invalid_feed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalid_feed.json; sourceTree = "<group>"; };
+		729B8DE020E0201400ED65A4 /* invalid_feed_item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalid_feed_item.json; sourceTree = "<group>"; };
+		729B8DE220E03C5100ED65A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		729B8DE420E03C5800ED65A4 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		A3F5AA94D4D49CE8BBAEF83C /* Pods-iTunesCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesCatalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesCatalog/Pods-iTunesCatalog.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				2009936F20DF9E5E004730F3 /* ListResponse.swift */,
+				729B8DE220E03C5100ED65A4 /* Movie.swift */,
+				729B8DE420E03C5800ED65A4 /* Song.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,9 +185,12 @@
 		72207D6A20DFFE2E003F2554 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				20DC261620D98225002D98C6 /* Info.plist */,
-				72207D6B20DFFE53003F2554 /* list_songs.json */,
+				729B8DE020E0201400ED65A4 /* invalid_feed_item.json */,
+				729B8DD820E01ED200ED65A4 /* invalid_feed.json */,
+				729B8DD620E01E7600ED65A4 /* invalid_response.json */,
 				72207D6D20DFFE7E003F2554 /* list_movies.json */,
+				72207D6B20DFFE53003F2554 /* list_songs.json */,
+				20DC261620D98225002D98C6 /* Info.plist */,
 				72207D6F20DFFEAA003F2554 /* JsonFileLoader.swift */,
 				729B8DCC20E011ED00ED65A4 /* MockObjects.swift */,
 			);
@@ -328,6 +343,9 @@
 			files = (
 				72207D6E20DFFE7E003F2554 /* list_movies.json in Resources */,
 				72207D6C20DFFE53003F2554 /* list_songs.json in Resources */,
+				729B8DD720E01E7600ED65A4 /* invalid_response.json in Resources */,
+				729B8DD920E01ED200ED65A4 /* invalid_feed.json in Resources */,
+				729B8DE120E0201400ED65A4 /* invalid_feed_item.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +393,9 @@
 			files = (
 				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,
 				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
+				729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */,
 				2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */,
+				729B8DE520E03C5800ED65A4 /* Song.swift in Sources */,
 				2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */,
 				2009936D20DF9D61004730F3 /* Resource.swift in Sources */,
 				209F69C220D85AE900C0CB9D /* ViewController.swift in Sources */,

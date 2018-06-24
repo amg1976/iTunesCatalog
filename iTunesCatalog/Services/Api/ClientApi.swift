@@ -21,7 +21,7 @@ final class ClientApi {
     
     /// Fetchs a list of movies from the resource loader
     ///
-    /// - Parameter completion: an instance of ListResponse<Movie> or nil if it fails fetching / parsing.
+    /// - Parameter completion: returns an instance of ListResponse<Movie> or nil if it fails fetching / parsing.
     func getMovies(onCompletion completion: @escaping (Result<ListResponse<Movie>>) -> Void) {
         
         let moviesResource = ResourceFactory.createListMoviesResource()
@@ -31,5 +31,18 @@ final class ClientApi {
         }
         
     }
-    
+
+    /// Fetchs a list of songs from the resource loader
+    ///
+    /// - Parameter completion: returns an instance of ListResponse<Song> or nil if it fails fetching / parsing.
+    func getSongs(onCompletion completion: @escaping (Result<ListResponse<Song>>) -> Void) {
+        
+        let songsResource = ResourceFactory.createListSongsResource()
+        
+        resourceLoader.load(resource: songsResource) { result in
+            completion(result)
+        }
+        
+    }
+
 }

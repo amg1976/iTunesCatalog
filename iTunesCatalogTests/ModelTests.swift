@@ -9,10 +9,20 @@
 import XCTest
 @testable import iTunesCatalog
 
+struct AnyItem: FeedItem {
+    let id: String
+    let name: String
+    let url: String
+}
+
+func createMockResource() -> Resource<ListResponse<AnyItem>> {
+    return Resource<ListResponse<AnyItem>>(withUrl: "https://apple.com", httpMethod: .get)
+}
+
 class ModelTests: XCTestCase {
     
     func testParseMovies() {
-        let jsonMovies = JsonFileLoader.loadMovies()
+        let jsonMovies = JsonFileLoader.movies()
         let moviesResource = ResourceFactory.createListMoviesResource()
         let list: ListResponse? = moviesResource.parse(jsonString: jsonMovies)
         
@@ -27,7 +37,7 @@ class ModelTests: XCTestCase {
     }
 
     func testParseSongs() {
-        let jsonSongs = JsonFileLoader.loadSongs()
+        let jsonSongs = JsonFileLoader.songs()
         let songsResource = ResourceFactory.createListSongsResource()
         let list: ListResponse? = songsResource.parse(jsonString: jsonSongs)
         
@@ -42,5 +52,32 @@ class ModelTests: XCTestCase {
         XCTAssertEqual(firstItem.artistName, "George Ezra")
         XCTAssertEqual(firstItem.collectionName, "Staying at Tamara's")
     }
+    
+    func testInvalidResponseFailsToParse() {
+        let jsonInvalid = JsonFileLoader.invalidResponse()
+        let mockResource = createMockResource()
+        
+        let result = mockResource.parse(jsonString: jsonInvalid)
+        XCTAssertNil(result)
+    }
 
+    func testInvalidFeedsFailsToParseResults() {
+        let jsonInvalid = JsonFileLoader.invalidFeed()
+        let mockResource = createMockResource()
+        
+        let result = mockResource.parse(jsonString: jsonInvalid)
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result!.feed.title, "Some feed")
+        XCTAssertEqual(result!.feed.results.count, 0)
+    }
+
+    func testInvalidFeedItemReturnsEmptyResults() {
+        let jsonInvalid = JsonFileLoader.invalidFeedItem()
+        let mockResource = createMockResource()
+        
+        let result = mockResource.parse(jsonString: jsonInvalid)
+        XCTAssertNotNil(result)
+        XCTAssertEqual(result!.feed.title, "Some feed")
+        XCTAssertEqual(result!.feed.results.count, 0)
+    }
 }

@@ -9,39 +9,33 @@
 import Foundation
 
 /// Declares the base properties of a Feed item
-protocol Item: Codable {
+protocol FeedItem: Codable {
     var id: String { get }
     var name: String { get }
     var url: String { get }
 }
 
-/// Song model
-struct Song: Item {
-    let id: String
-    let name: String
-    let url: String
-    let artistName: String
-    let collectionName: String
-}
-
-/// Movie model
-struct Movie: Item {
-    let id: String
-    let name: String
-    let url: String
-}
-
 /// Models the root element of the ListResponse object
-struct Feed<Item: Codable>: Codable {
+struct Feed<Item: FeedItem>: Codable {
     
     /// The title of the feed
     var title: String
     
     /// An array with the actual list items
     var results: [Item]
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        title = try values.decode(String.self, forKey: .title)
+        if let results = try? values.decode([Item].self, forKey: .results) {
+            self.results = results
+        } else {
+            self.results = []
+        }
+    }
 }
 
 /// Models the response received from fetching a list Resource
-struct ListResponse<Item: Codable>: Codable {
+struct ListResponse<Item: FeedItem>: Codable {
     var feed: Feed<Item>
 }
