@@ -8,7 +8,7 @@
 
 import XCTest
 
-class iTunesCatalogTests: XCTestCase {
+class ITunesCatalogTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

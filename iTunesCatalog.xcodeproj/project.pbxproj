@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2009936D20DF9D61004730F3 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009936C20DF9D61004730F3 /* Resource.swift */; };
+		2009937020DF9E5E004730F3 /* ListMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009936F20DF9E5E004730F3 /* ListMovies.swift */; };
+		2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937120DF9E93004730F3 /* ResourceFactory.swift */; };
+		2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937420DF9EC9004730F3 /* ClientApi.swift */; };
 		209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69BF20D85AE900C0CB9D /* AppDelegate.swift */; };
 		209F69C220D85AE900C0CB9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69C120D85AE900C0CB9D /* ViewController.swift */; };
 		209F69C520D85AE900C0CB9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C320D85AE900C0CB9D /* Main.storyboard */; };
 		209F69C720D85AEB00C0CB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C620D85AEB00C0CB9D /* Assets.xcassets */; };
 		209F69CA20D85AEB00C0CB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C820D85AEB00C0CB9D /* LaunchScreen.storyboard */; };
 		20DC261520D98225002D98C6 /* iTunesCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DC261420D98225002D98C6 /* iTunesCatalogTests.swift */; };
-		20EDC58F20DC416300AEC894 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC58E20DC416300AEC894 /* Api.swift */; };
-		20EDC59020DC416300AEC894 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC58E20DC416300AEC894 /* Api.swift */; };
+		20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EDC58E20DC416300AEC894 /* NetworkService.swift */; };
 		887F9EC19F7845A0442CB1B7 /* Pods_iTunesCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		07EE542FC93C7FA25B70E07A /* Pods-iTunesCatalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesCatalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesCatalog/Pods-iTunesCatalog.release.xcconfig"; sourceTree = "<group>"; };
+		2009936C20DF9D61004730F3 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		2009936F20DF9E5E004730F3 /* ListMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovies.swift; sourceTree = "<group>"; };
+		2009937120DF9E93004730F3 /* ResourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceFactory.swift; sourceTree = "<group>"; };
+		2009937420DF9EC9004730F3 /* ClientApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
 		209F69BC20D85AE900C0CB9D /* iTunesCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F69BF20D85AE900C0CB9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209F69C120D85AE900C0CB9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +47,7 @@
 		20DC261220D98224002D98C6 /* iTunesCatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesCatalogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DC261420D98225002D98C6 /* iTunesCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesCatalogTests.swift; sourceTree = "<group>"; };
 		20DC261620D98225002D98C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20EDC58E20DC416300AEC894 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		20EDC58E20DC416300AEC894 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A3F5AA94D4D49CE8BBAEF83C /* Pods-iTunesCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesCatalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesCatalog/Pods-iTunesCatalog.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -64,6 +71,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2009936A20DF9D34004730F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2009937320DF9EB6004730F3 /* Api */,
+				2009936B20DF9D50004730F3 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2009936B20DF9D50004730F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				20EDC58E20DC416300AEC894 /* NetworkService.swift */,
+				2009936C20DF9D61004730F3 /* Resource.swift */,
+				2009937120DF9E93004730F3 /* ResourceFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2009936E20DF9E4A004730F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2009936F20DF9E5E004730F3 /* ListMovies.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2009937320DF9EB6004730F3 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				2009937420DF9EC9004730F3 /* ClientApi.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		209F69B320D85AE900C0CB9D = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +129,14 @@
 		209F69BE20D85AE900C0CB9D /* iTunesCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				2009936E20DF9E4A004730F3 /* Models */,
+				2009936A20DF9D34004730F3 /* Services */,
 				209F69BF20D85AE900C0CB9D /* AppDelegate.swift */,
 				209F69C120D85AE900C0CB9D /* ViewController.swift */,
 				209F69C320D85AE900C0CB9D /* Main.storyboard */,
 				209F69C620D85AEB00C0CB9D /* Assets.xcassets */,
 				209F69C820D85AEB00C0CB9D /* LaunchScreen.storyboard */,
 				209F69CB20D85AEB00C0CB9D /* Info.plist */,
-				20EDC58E20DC416300AEC894 /* Api.swift */,
 			);
 			path = iTunesCatalog;
 			sourceTree = "<group>";
@@ -262,7 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EDC58F20DC416300AEC894 /* Api.swift in Sources */,
+				2009937020DF9E5E004730F3 /* ListMovies.swift in Sources */,
+				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
+				2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */,
+				2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */,
+				2009936D20DF9D61004730F3 /* Resource.swift in Sources */,
 				209F69C220D85AE900C0CB9D /* ViewController.swift in Sources */,
 				209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */,
 			);
@@ -272,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EDC59020DC416300AEC894 /* Api.swift in Sources */,
 				20DC261520D98225002D98C6 /* iTunesCatalogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
