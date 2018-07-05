@@ -8,9 +8,10 @@
 
 import UIKit
 
+/// Shows a list of items from a specified FeedType
 final class DetailViewController: UIViewController {
 
-    @IBOutlet private var dateLabel: UILabel!
+    private var feedType: FeedType!
     
     override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -19,21 +20,34 @@ final class DetailViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
 
 }
 
 extension DetailViewController {
     
-    static func create(withDate date: Date) -> DetailViewController {
+    static func create(withFeedType feedType: FeedType) -> DetailViewController {
         
         guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? DetailViewController else {
             fatalError("Unable to create DetailViewController")
         }
         
-        viewController.loadViewIfNeeded()
-        viewController.dateLabel.text = String(describing: date)
+        viewController.feedType = feedType
         
         return viewController
+    }
+    
+}
+
+private typealias Private = DetailViewController
+private extension Private {
+    
+    func setup() {
+        navigationItem.title = feedType.controllerTitle
     }
     
 }

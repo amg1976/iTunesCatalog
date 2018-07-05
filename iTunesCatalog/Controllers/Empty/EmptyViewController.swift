@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmptyViewController: UIViewController {
+final class EmptyViewController: UIViewController {
 
     override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)

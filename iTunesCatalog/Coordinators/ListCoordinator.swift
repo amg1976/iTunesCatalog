@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ListCoordinatorDelegate: class {
-    func didSelectFeed()
+    func didSelectFeed(type: FeedType)
 }
 
 final class ListCoordinator: FlowCoordinator {
@@ -35,8 +35,8 @@ final class ListCoordinator: FlowCoordinator {
 
 extension ListCoordinator: ListViewControllerDelegate {
     
-    func didSelectFeed() {
-        delegate?.didSelectFeed()
+    func didSelectFeed(type: FeedType) {
+        delegate?.didSelectFeed(type: type)
     }
     
 }

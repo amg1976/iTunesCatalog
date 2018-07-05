@@ -10,6 +10,64 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--List-->
+        <scene sceneID="bnJ-HT-5HK">
+            <objects>
+                <tableViewController storyboardIdentifier="ListViewController" id="IDE-dS-Xwr" userLabel="List" customClass="ListViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ncQ-sx-iIW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="mcF-q5-wzd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="TDh-Za-qIE" style="IBUITableViewCellStyleDefault" id="MZS-Yz-qWW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MZS-Yz-qWW" id="h4U-ci-KOD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TDh-Za-qIE">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="43w-uh-sqk" style="IBUITableViewCellStyleDefault" id="gFg-XE-Ex1">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gFg-XE-Ex1" id="TPW-nh-6tZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Songs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43w-uh-sqk">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="IDE-dS-Xwr" id="VNZ-y2-Zjk"/>
+                            <outlet property="delegate" destination="IDE-dS-Xwr" id="4Zz-7S-VSZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cu3-uv-I0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="-483"/>
+        </scene>
         <!--Detail-->
         <scene sceneID="oCY-dY-vN4">
             <objects>
@@ -17,24 +75,9 @@
                     <view key="view" contentMode="scaleToFill" id="I24-YG-2JD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date&amp;time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0i-fp-lWc">
-                                <rect key="frame" x="130" y="318" width="116.5" height="31.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="E0i-fp-lWc" firstAttribute="centerY" secondItem="I24-YG-2JD" secondAttribute="centerY" id="Mj4-8a-Rk3"/>
-                            <constraint firstItem="E0i-fp-lWc" firstAttribute="centerX" secondItem="I24-YG-2JD" secondAttribute="centerX" id="eCz-hM-iDe"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aEs-GZ-EVO"/>
                     </view>
-                    <connections>
-                        <outlet property="dateLabel" destination="E0i-fp-lWc" id="cWl-8x-Dza"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsF-0e-ARM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,35 +109,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHk-0O-J8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2009" y="-482"/>
-        </scene>
-        <!--Feed-->
-        <scene sceneID="wOq-m7-g5L">
-            <objects>
-                <viewController storyboardIdentifier="ListViewController" id="fH9-k6-TPr" customClass="ListViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NVV-ww-m3w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It2-ZS-0Hp">
-                                <rect key="frame" x="162.5" y="318" width="50" height="30"/>
-                                <state key="normal" title="Tap me"/>
-                                <connections>
-                                    <action selector="tappedButton:" destination="fH9-k6-TPr" eventType="touchUpInside" id="oro-vW-Xvi"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="It2-ZS-0Hp" firstAttribute="centerX" secondItem="NVV-ww-m3w" secondAttribute="centerX" id="5yr-ox-v0K"/>
-                            <constraint firstItem="It2-ZS-0Hp" firstAttribute="centerY" secondItem="NVV-ww-m3w" secondAttribute="centerY" id="l19-lu-bgq"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="swQ-Jv-IOB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Feed" id="JGf-hM-Gtb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XwV-hc-wIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="666" y="-480"/>
         </scene>
     </scenes>
 </document>

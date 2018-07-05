@@ -9,11 +9,12 @@
 import UIKit
 
 protocol ListViewControllerDelegate: class {
-    func didSelectFeed()
+    func didSelectFeed(type: FeedType)
 }
 
-final class ListViewController: UIViewController {
-
+/// Shows a list of feed types
+final class ListViewController: UITableViewController {
+    
     private (set) weak var delegate: ListViewControllerDelegate?
     
     override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -23,10 +24,14 @@ final class ListViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+
+    // MARK: - UITableViewDelegate
     
-    @IBAction private func tappedButton(_ sender: Any) {
-        delegate?.didSelectFeed()
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let feedType = FeedType(rawValue: indexPath.row) else { return }
+        delegate?.didSelectFeed(type: feedType)
     }
+    
 }
 
 extension ListViewController {

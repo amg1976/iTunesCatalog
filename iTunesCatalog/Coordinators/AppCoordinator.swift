@@ -68,8 +68,8 @@ extension AppCoordinator: UISplitViewControllerDelegate {
 
 extension AppCoordinator: ListCoordinatorDelegate {
     
-    func didSelectFeed() {
-        let detailViewController = DetailViewController.create(withDate: Date())
+    func didSelectFeed(type: FeedType) {
+        let detailViewController = DetailViewController.create(withFeedType: type)
         splitViewController?.showDetailViewController(detailViewController, sender: nil)
     }
     
