@@ -29,25 +29,16 @@ final class AppCoordinator: FlowCoordinator {
 
         listCoordinator.start()
 
+        let emptyViewController = EmptyViewController.create()
+
         let splitViewController = UISplitViewController(nibName: nil, bundle: nil)
+        splitViewController.viewControllers = [listCoordinator.navigationController, emptyViewController]
         splitViewController.delegate = self
         splitViewController.preferredDisplayMode = .allVisible
         self.splitViewController = splitViewController
-
-        let emptyViewController = EmptyViewController.create()
-        splitViewController.viewControllers = [listCoordinator.navigationController, emptyViewController]
         
         window.rootViewController = splitViewController
         window.makeKeyAndVisible()
-    }
-    
-}
-
-extension AppCoordinator: ListCoordinatorDelegate {
-    
-    func didSelectFeed() {
-        let detailViewController = DetailViewController.create(withDate: Date())
-        splitViewController?.showDetailViewController(detailViewController, sender: nil)
     }
     
 }
@@ -71,6 +62,15 @@ extension AppCoordinator: UISplitViewControllerDelegate {
         
         return false
         
+    }
+    
+}
+
+extension AppCoordinator: ListCoordinatorDelegate {
+    
+    func didSelectFeed() {
+        let detailViewController = DetailViewController.create(withDate: Date())
+        splitViewController?.showDetailViewController(detailViewController, sender: nil)
     }
     
 }
