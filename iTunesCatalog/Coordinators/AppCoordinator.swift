@@ -32,7 +32,7 @@ final class AppCoordinator: FlowCoordinator {
         let emptyViewController = EmptyViewController.create()
 
         let splitViewController = UISplitViewController(nibName: nil, bundle: nil)
-        splitViewController.viewControllers = [listCoordinator.navigationController, emptyViewController]
+        splitViewController.viewControllers = [listCoordinator.rootController, emptyViewController]
         splitViewController.delegate = self
         splitViewController.preferredDisplayMode = .allVisible
         self.splitViewController = splitViewController

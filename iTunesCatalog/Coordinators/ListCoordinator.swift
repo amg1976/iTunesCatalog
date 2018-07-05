@@ -14,7 +14,7 @@ protocol ListCoordinatorDelegate: class {
 
 final class ListCoordinator: FlowCoordinator {
 
-    let navigationController =  UINavigationController(nibName: nil, bundle: nil)
+    let rootController =  UINavigationController(nibName: nil, bundle: nil)
     
     private (set) weak var delegate: ListCoordinatorDelegate?
     
@@ -24,11 +24,11 @@ final class ListCoordinator: FlowCoordinator {
     
     func start() {
         let listViewController = ListViewController.create(withDelegate: self)
-        navigationController.viewControllers = [listViewController]
+        rootController.viewControllers = [listViewController]
     }
     
     func showDetail(_ detailViewController: UIViewController) {
-        navigationController.pushViewController(detailViewController, animated: true)
+        rootController.pushViewController(detailViewController, animated: true)
     }
     
 }
