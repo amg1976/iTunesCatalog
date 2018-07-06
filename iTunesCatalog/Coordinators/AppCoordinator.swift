@@ -12,6 +12,7 @@ protocol FlowCoordinator {
     func start()
 }
 
+/// Coordinates the AppDelegate entry point.
 final class AppCoordinator: FlowCoordinator {
     
     // MARK: - Private properties

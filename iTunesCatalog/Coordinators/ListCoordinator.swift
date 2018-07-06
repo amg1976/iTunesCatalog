@@ -12,6 +12,7 @@ protocol ListCoordinatorDelegate: class {
     func didSelect(controller: UIViewController)
 }
 
+/// Coordinator for the List flow
 final class ListCoordinator: FlowCoordinator {
 
     // MARK: - Private properties

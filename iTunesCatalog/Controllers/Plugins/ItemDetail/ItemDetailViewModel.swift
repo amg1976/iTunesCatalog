@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// ViewModel to feed each Item in the Feed items collection
 struct ItemDetailViewModel {
     let title: String
 }

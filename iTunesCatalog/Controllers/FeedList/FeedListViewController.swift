@@ -12,7 +12,7 @@ protocol ListViewControllerDelegate: class {
     func didSelectFeed(type: FeedType)
 }
 
-/// Shows a list of feed types
+/// Shows a list of Feed types
 final class FeedListViewController: UITableViewController {
     
     // MARK: - Public properties

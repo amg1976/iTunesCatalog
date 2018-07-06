@@ -12,6 +12,7 @@ protocol FeedDetailViewModelDelegate: AnyObject {
     func didSelectFeedItem(_ item: ItemDetailViewModel)
 }
 
+/// ViewModel that loads and processes the API data to show a collection of Feed items
 final class FeedDetailViewModel {
     
     // MARK: - Private methods
