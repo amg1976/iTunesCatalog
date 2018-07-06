@@ -17,6 +17,7 @@ final class ListCoordinator: FlowCoordinator {
     // MARK: - Private properties
     
     private var clientApi: ClientApi
+    private var innerNavigationController: UINavigationController?
 
     // MARK: - Public properties
     
@@ -44,12 +45,28 @@ final class ListCoordinator: FlowCoordinator {
 extension ListCoordinator: ListViewControllerDelegate {
     
     func didSelectFeed(type: FeedType) {
+        
         let viewModel = FeedDetailViewModel(withFeedType: type,
                                             clientApi: clientApi,
-                                            userInterfaceIdiom: UIDevice.current.userInterfaceIdiom)
+                                            userInterfaceIdiom: UIDevice.current.userInterfaceIdiom,
+                                            delegate: self)
+        
         let detailViewController = FeedDetailViewController(withViewModel: viewModel)
 
-        delegate?.didSelect(controller: detailViewController)
+        let detailNavigationController = UINavigationController(rootViewController: detailViewController)
+        
+        delegate?.didSelect(controller: detailNavigationController)
+        
+        self.innerNavigationController = detailNavigationController
     }
     
+}
+
+extension ListCoordinator: FeedDetailViewModelDelegate {
+    
+    func didSelectFeedItem(_ item: Item) {
+        let controller = ItemDetailViewController.create(withItem: item)
+        innerNavigationController?.pushViewController(controller, animated: true)
+    }
+
 }

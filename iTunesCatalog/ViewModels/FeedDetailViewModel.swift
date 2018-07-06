@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol FeedDetailViewModelDelegate: AnyObject {
+    func didSelectFeedItem(_ item: Item)
+}
+
 final class FeedDetailViewModel {
     
     // MARK: - Private methods
@@ -15,6 +19,7 @@ final class FeedDetailViewModel {
     private let feedType: FeedType
     private let clientApi: ClientApi
     private let userInterfaceIdiom: UIUserInterfaceIdiom
+    private weak var delegate: FeedDetailViewModelDelegate?
 
     // MARK: - Public properties
     
@@ -24,10 +29,15 @@ final class FeedDetailViewModel {
     
     // MARK: - Public methods
     
-    init(withFeedType feedType: FeedType, clientApi: ClientApi, userInterfaceIdiom: UIUserInterfaceIdiom) {
+    init(withFeedType feedType: FeedType,
+         clientApi: ClientApi,
+         userInterfaceIdiom: UIUserInterfaceIdiom,
+         delegate: FeedDetailViewModelDelegate) {
+        
         self.feedType = feedType
         self.clientApi = clientApi
         self.userInterfaceIdiom = userInterfaceIdiom
+        self.delegate = delegate
     }
     
     func loadData(onCompletion completion: @escaping (Result<ItemCollectionViewModel>) -> Void) {
@@ -45,7 +55,8 @@ final class FeedDetailViewModel {
                     let items: [Item] = movies.feed.results.map({ Item(title: $0.name) })
                     let viewModel = ItemCollectionViewModel(withTitle: movies.feed.title,
                                                             items: items,
-                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom)
+                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom,
+                                                            delegate: strongSelf)
                     completion(Result.succeeded(viewModel))
                     
                 case .errored(let error):
@@ -64,7 +75,8 @@ final class FeedDetailViewModel {
                     let items: [Item] = songs.feed.results.map({ Item(title: $0.name) })
                     let viewModel = ItemCollectionViewModel(withTitle: songs.feed.title,
                                                             items: items,
-                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom)
+                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom,
+                                                            delegate: strongSelf)
                     completion(Result.succeeded(viewModel))
 
                 case .errored(let error):
@@ -76,4 +88,11 @@ final class FeedDetailViewModel {
         
     }
     
+}
+
+extension FeedDetailViewModel: ItemCollectionViewModelDelegate {
+    
+    func didSelect(item: Item) {
+        delegate?.didSelectFeedItem(item)
+    }
 }

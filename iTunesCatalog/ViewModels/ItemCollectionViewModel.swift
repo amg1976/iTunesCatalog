@@ -12,12 +12,18 @@ struct Item {
     let title: String
 }
 
+protocol ItemCollectionViewModelDelegate: AnyObject {
+    func didSelect(item: Item)
+}
+
+/// ViewModel for the ItemCollectionViewController
 final class ItemCollectionViewModel: NSObject {
 
     // MARK: - Private properties
 
     private var items: [Item]
     private var userInterfaceIdiom: UIUserInterfaceIdiom
+    private weak var delegate: ItemCollectionViewModelDelegate?
 
     // MARK: - Public properties
     
@@ -35,10 +41,14 @@ final class ItemCollectionViewModel: NSObject {
 
     // MARK: - Public methods
     
-    init(withTitle title: String, items: [Item], userInterfaceIdiom: UIUserInterfaceIdiom) {
+    init(withTitle title: String,
+         items: [Item],
+         userInterfaceIdiom: UIUserInterfaceIdiom,
+         delegate: ItemCollectionViewModelDelegate) {
         self.title = title
         self.items = items
         self.userInterfaceIdiom = userInterfaceIdiom
+        self.delegate = delegate
     }
 }
 
@@ -50,9 +60,27 @@ extension ItemCollectionViewModel: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCollectionCell", for: indexPath)
-        cell.backgroundColor = .red
+        let item = items[indexPath.item]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionCell.reusableIdentifier, for: indexPath)
+        
+        if let cell = cell as? ItemCollectionCell {
+            cell.configure(withItem: item)
+        }
+        
         return cell
+    }
+    
+}
+
+extension ItemCollectionViewModel: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if let cell = collectionView.cellForItem(at: indexPath) as? ItemCollectionCell,
+            let item = cell.item {
+            delegate?.didSelect(item: item)
+        }
+        
     }
     
 }

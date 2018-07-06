@@ -8,6 +8,22 @@
 
 import UIKit
 
+/// Cell used for displaying Feed items on a collection view
+final class ItemCollectionCell: UICollectionViewCell {
+    
+    static var reusableIdentifier: String {
+        return String(describing: ItemCollectionCell.self)
+    }
+    
+    private (set) var item: Item?
+    
+    func configure(withItem item: Item) {
+        self.item = item
+        self.backgroundColor = .red
+    }
+    
+}
+
 /// Shows a collection of Feed items
 final class ItemCollectionViewController: UIViewController {
     
@@ -18,6 +34,7 @@ final class ItemCollectionViewController: UIViewController {
         didSet {
             loadViewIfNeeded()
             collectionView.dataSource = viewModel
+            collectionView.delegate = viewModel
         }
     }
 
@@ -59,6 +76,7 @@ private typealias Private = ItemCollectionViewController
 private extension Private {
     
     func setup() {
+        collectionView.register(ItemCollectionCell.self, forCellWithReuseIdentifier: ItemCollectionCell.reusableIdentifier)
         (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = viewModel.itemSize
     }
     
