@@ -6,7 +6,7 @@
 //  Copyright © 2018 Adriano Goncalves. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class FeedDetailViewModel {
     
@@ -14,6 +14,7 @@ final class FeedDetailViewModel {
     
     private let feedType: FeedType
     private let clientApi: ClientApi
+    private let userInterfaceIdiom: UIUserInterfaceIdiom
 
     // MARK: - Public properties
     
@@ -23,9 +24,10 @@ final class FeedDetailViewModel {
     
     // MARK: - Public methods
     
-    init(withFeedType feedType: FeedType, clientApi: ClientApi) {
+    init(withFeedType feedType: FeedType, clientApi: ClientApi, userInterfaceIdiom: UIUserInterfaceIdiom) {
         self.feedType = feedType
         self.clientApi = clientApi
+        self.userInterfaceIdiom = userInterfaceIdiom
     }
     
     func loadData(onCompletion completion: @escaping (Result<ItemCollectionViewModel>) -> Void) {
@@ -33,13 +35,17 @@ final class FeedDetailViewModel {
         switch feedType {
             
         case .movies:
-            clientApi.getMovies { (result) in
+            clientApi.getMovies { [weak self] (result) in
+                
+                guard let strongSelf = self else { return }
                 
                 switch result {
                     
                 case .succeeded(let movies):
                     let items: [Item] = movies.feed.results.map({ Item(title: $0.name) })
-                    let viewModel = ItemCollectionViewModel(withTitle: movies.feed.title, items: items)
+                    let viewModel = ItemCollectionViewModel(withTitle: movies.feed.title,
+                                                            items: items,
+                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom)
                     completion(Result.succeeded(viewModel))
                     
                 case .errored(let error):
@@ -48,13 +54,17 @@ final class FeedDetailViewModel {
             }
             
         case .songs:
-            clientApi.getSongs { (result) in
+            clientApi.getSongs { [weak self] (result) in
+
+                guard let strongSelf = self else { return }
 
                 switch result {
                     
                 case .succeeded(let songs):
                     let items: [Item] = songs.feed.results.map({ Item(title: $0.name) })
-                    let viewModel = ItemCollectionViewModel(withTitle: songs.feed.title, items: items)
+                    let viewModel = ItemCollectionViewModel(withTitle: songs.feed.title,
+                                                            items: items,
+                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom)
                     completion(Result.succeeded(viewModel))
 
                 case .errored(let error):

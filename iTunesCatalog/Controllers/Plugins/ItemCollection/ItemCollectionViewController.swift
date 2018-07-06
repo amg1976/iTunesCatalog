@@ -8,12 +8,6 @@
 
 import UIKit
 
-final class ItemCollectionHeader: UICollectionReusableView {
-    
-    @IBOutlet weak var headerLabel: UILabel!
-    
-}
-
 /// Shows a collection of Feed items
 final class ItemCollectionViewController: UIViewController {
     
@@ -65,7 +59,7 @@ private typealias Private = ItemCollectionViewController
 private extension Private {
     
     func setup() {
-        collectionView.register(ItemCollectionHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: String(describing: ItemCollectionHeader.self))
+        (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = viewModel.itemSize
     }
     
 }

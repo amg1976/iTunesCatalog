@@ -21,8 +21,10 @@ func createMockResource() -> Resource<ListResponse<AnyItem>> {
 
 class ModelTests: XCTestCase {
     
+    let jsonLoader = JsonFileLoader(withBundle: Bundle(for: ModelTests.self))
+    
     func testParseMovies() {
-        let jsonMovies = JsonFileLoader.movies()
+        let jsonMovies = jsonLoader.movies()
         let moviesResource = ResourceFactory.createListMoviesResource()
         let list: ListResponse? = moviesResource.parse(jsonString: jsonMovies)
         
@@ -37,7 +39,7 @@ class ModelTests: XCTestCase {
     }
 
     func testParseSongs() {
-        let jsonSongs = JsonFileLoader.songs()
+        let jsonSongs = jsonLoader.songs()
         let songsResource = ResourceFactory.createListSongsResource()
         let list: ListResponse? = songsResource.parse(jsonString: jsonSongs)
         
@@ -54,7 +56,7 @@ class ModelTests: XCTestCase {
     }
     
     func testInvalidResponseFailsToParse() {
-        let jsonInvalid = JsonFileLoader.invalidResponse()
+        let jsonInvalid = jsonLoader.invalidResponse()
         let mockResource = createMockResource()
         
         let result = mockResource.parse(jsonString: jsonInvalid)
@@ -62,7 +64,7 @@ class ModelTests: XCTestCase {
     }
 
     func testInvalidFeedsFailsToParseResults() {
-        let jsonInvalid = JsonFileLoader.invalidFeed()
+        let jsonInvalid = jsonLoader.invalidFeed()
         let mockResource = createMockResource()
         
         let result = mockResource.parse(jsonString: jsonInvalid)
@@ -72,7 +74,7 @@ class ModelTests: XCTestCase {
     }
 
     func testInvalidFeedItemReturnsEmptyResults() {
-        let jsonInvalid = JsonFileLoader.invalidFeedItem()
+        let jsonInvalid = jsonLoader.invalidFeedItem()
         let mockResource = createMockResource()
         
         let result = mockResource.parse(jsonString: jsonInvalid)

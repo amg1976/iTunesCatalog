@@ -44,7 +44,9 @@ final class ListCoordinator: FlowCoordinator {
 extension ListCoordinator: ListViewControllerDelegate {
     
     func didSelectFeed(type: FeedType) {
-        let viewModel = FeedDetailViewModel(withFeedType: type, clientApi: clientApi)
+        let viewModel = FeedDetailViewModel(withFeedType: type,
+                                            clientApi: clientApi,
+                                            userInterfaceIdiom: UIDevice.current.userInterfaceIdiom)
         let detailViewController = FeedDetailViewController(withViewModel: viewModel)
 
         delegate?.didSelect(controller: detailViewController)

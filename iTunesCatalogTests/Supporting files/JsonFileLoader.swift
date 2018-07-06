@@ -8,11 +8,13 @@
 
 import Foundation
 
-enum JsonFileLoader {
+class JsonFileLoader {
     
-    static private func load(resource: String) -> String {
+    private var bundle: Bundle
+    
+    private func load(resource: String) -> String {
 
-        guard let completePath = Bundle(for: ModelTests.self).path(forResource: resource, ofType: "json") else {
+        guard let completePath = bundle.path(forResource: resource, ofType: "json") else {
             fatalError("File not found")
         }
         
@@ -25,24 +27,28 @@ enum JsonFileLoader {
         return fileContent
     }
     
-    static func movies() -> String {
-        return JsonFileLoader.load(resource: "list_movies")
-    }
-
-    static func songs() -> String {
-        return JsonFileLoader.load(resource: "list_songs")
-    }
-
-    static func invalidResponse() -> String {
-        return JsonFileLoader.load(resource: "invalid_response")
-    }
-
-    static func invalidFeed() -> String {
-        return JsonFileLoader.load(resource: "invalid_feed")
+    init(withBundle bundle: Bundle = Bundle.main) {
+        self.bundle = bundle
     }
     
-    static func invalidFeedItem() -> String {
-        return JsonFileLoader.load(resource: "invalid_feed_item")
+    func movies() -> String {
+        return load(resource: "list_movies")
+    }
+
+    func songs() -> String {
+        return load(resource: "list_songs")
+    }
+
+    func invalidResponse() -> String {
+        return load(resource: "invalid_response")
+    }
+
+    func invalidFeed() -> String {
+        return load(resource: "invalid_feed")
+    }
+    
+    func invalidFeedItem() -> String {
+        return load(resource: "invalid_feed_item")
     }
 
 }

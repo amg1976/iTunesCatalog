@@ -38,6 +38,10 @@
 		72A0F4BB20EEF4F700A23A16 /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */; };
 		72A0F4C020EEF81B00A23A16 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4BF20EEF81B00A23A16 /* ItemCollectionViewController.swift */; };
 		72A0F4C220EEF93900A23A16 /* ItemCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4C120EEF93900A23A16 /* ItemCollectionViewModel.swift */; };
+		72A0F4CF20EFB79D00A23A16 /* LocalFilesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4CE20EFB79D00A23A16 /* LocalFilesService.swift */; };
+		72A0F4D020EFB7F800A23A16 /* JsonFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72207D6F20DFFEAA003F2554 /* JsonFileLoader.swift */; };
+		72A0F4D120EFB8DC00A23A16 /* list_movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 72207D6D20DFFE7E003F2554 /* list_movies.json */; };
+		72A0F4D220EFB8DC00A23A16 /* list_songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 72207D6B20DFFE53003F2554 /* list_songs.json */; };
 		72FE2FD620EED5900087835B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD520EED5900087835B /* FeedType.swift */; };
 		72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD820EEDA440087835B /* LoadingViewController.swift */; };
 		72FE2FDC20EEDEEE0087835B /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */; };
@@ -91,6 +95,7 @@
 		72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 		72A0F4BF20EEF81B00A23A16 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
 		72A0F4C120EEF93900A23A16 /* ItemCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewModel.swift; sourceTree = "<group>"; };
+		72A0F4CE20EFB79D00A23A16 /* LocalFilesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilesService.swift; sourceTree = "<group>"; };
 		72FE2FD520EED5900087835B /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
 		72FE2FD820EEDA440087835B /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +134,7 @@
 		2009936B20DF9D50004730F3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				72A0F4CE20EFB79D00A23A16 /* LocalFilesService.swift */,
 				20EDC58E20DC416300AEC894 /* NetworkService.swift */,
 				2009936C20DF9D61004730F3 /* Resource.swift */,
 				2009937120DF9E93004730F3 /* ResourceFactory.swift */,
@@ -449,6 +455,8 @@
 			files = (
 				209F69CA20D85AEB00C0CB9D /* LaunchScreen.storyboard in Resources */,
 				209F69C720D85AEB00C0CB9D /* Assets.xcassets in Resources */,
+				72A0F4D220EFB8DC00A23A16 /* list_songs.json in Resources */,
+				72A0F4D120EFB8DC00A23A16 /* list_movies.json in Resources */,
 				209F69C520D85AE900C0CB9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,9 +515,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A0F4D020EFB7F800A23A16 /* JsonFileLoader.swift in Sources */,
 				729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */,
 				72A0F4C220EEF93900A23A16 /* ItemCollectionViewModel.swift in Sources */,
 				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,
+				72A0F4CF20EFB79D00A23A16 /* LocalFilesService.swift in Sources */,
 				72A0F4C020EEF81B00A23A16 /* ItemCollectionViewController.swift in Sources */,
 				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
 				72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */,

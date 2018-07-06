@@ -12,7 +12,8 @@ import Foundation
 class SongsResourceLoader: ResourceLoader {
     
     func load<T>(resource: Resource<T>, completion: @escaping (Result<T>) -> Void) {
-        let jsonString = JsonFileLoader.songs()
+        let jsonLoader = JsonFileLoader(withBundle: Bundle(for: ModelTests.self))
+        let jsonString = jsonLoader.songs()
         let songsResource = ResourceFactory.createListSongsResource()
         // swiftlint:disable force_cast
         let response = songsResource.parse(jsonString: jsonString) as! T
@@ -27,7 +28,8 @@ class SongsResourceLoader: ResourceLoader {
 class MoviesResourceLoader: ResourceLoader {
     
     func load<T>(resource: Resource<T>, completion: @escaping (Result<T>) -> Void) {
-        let jsonString = JsonFileLoader.movies()
+        let jsonLoader = JsonFileLoader(withBundle: Bundle(for: ModelTests.self))
+        let jsonString = jsonLoader.movies()
         let moviesResource = ResourceFactory.createListMoviesResource()
         // swiftlint:disable force_cast
         let response = moviesResource.parse(jsonString: jsonString) as! T
