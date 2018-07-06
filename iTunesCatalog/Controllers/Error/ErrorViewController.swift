@@ -28,6 +28,15 @@ final class ErrorViewController: UIViewController {
         fatalError("Not implemented")
     }
 
+    // MARK: - Public properties
+    
+    var error: Error? {
+        didSet {
+            guard let error = error else { return }
+            errorLabel.text = error.localizedDescription
+        }
+    }
+    
     // MARK: - Public methods
 
     required init?(coder aDecoder: NSCoder) {

@@ -13,11 +13,10 @@ final class DetailViewController: UIViewController {
 
     // MARK: - Private properties
 
-    private var feedType: FeedType!
+    private var viewModel: DetailViewModel!
     private lazy var loadingController = LoadingViewController()
     private lazy var errorController = ErrorViewController.create { [unowned self] in
-        self.hide(self.errorController)
-        self.show(self.loadingController)
+        self.load()
     }
 
     // MARK: - Private init
@@ -35,25 +34,20 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        show(loadingController)
-        
-        delay(1) {
-            self.hide(self.loadingController)
-            self.show(self.errorController)
-        }
+        load()
     }
 
 }
 
 extension DetailViewController {
     
-    static func create(withFeedType feedType: FeedType) -> DetailViewController {
+    static func create(withViewModel viewModel: DetailViewModel) -> DetailViewController {
         
         guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? DetailViewController else {
             fatalError("Unable to create DetailViewController")
         }
         
-        viewController.feedType = feedType
+        viewController.viewModel = viewModel
         
         return viewController
     }
@@ -64,7 +58,31 @@ private typealias Private = DetailViewController
 private extension Private {
     
     func setup() {
-        navigationItem.title = feedType.controllerTitle
+        navigationItem.title = viewModel.controllerTitle
+    }
+    
+    func load() {
+
+        hide(errorController)
+        show(loadingController)
+
+        viewModel.loadData { [weak self] (result) in
+            
+            guard let strongSelf = self else { return }
+            
+            switch result {
+                
+            case .succeeded(let items):
+                print(items.count)
+                
+            case .errored(let error):
+                strongSelf.errorController.error = error
+                strongSelf.hide(strongSelf.loadingController)
+                strongSelf.show(strongSelf.errorController)
+            }
+
+        }
+
     }
 
 }

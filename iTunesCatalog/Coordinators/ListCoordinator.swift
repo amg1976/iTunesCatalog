@@ -9,17 +9,25 @@
 import UIKit
 
 protocol ListCoordinatorDelegate: class {
-    func didSelectFeed(type: FeedType)
+    func didSelect(controller: UIViewController)
 }
 
 final class ListCoordinator: FlowCoordinator {
 
+    // MARK: - Private properties
+    
+    private var clientApi: ClientApi
+
+    // MARK: - Public properties
+    
     let rootController =  UINavigationController(nibName: nil, bundle: nil)
-    
     private (set) weak var delegate: ListCoordinatorDelegate?
-    
-    init(withDelegate delegate: ListCoordinatorDelegate) {
+
+    // MARK: - Public methods
+
+    init(withDelegate delegate: ListCoordinatorDelegate, clientApi: ClientApi) {
         self.delegate = delegate
+        self.clientApi = clientApi
     }
     
     func start() {
@@ -36,7 +44,10 @@ final class ListCoordinator: FlowCoordinator {
 extension ListCoordinator: ListViewControllerDelegate {
     
     func didSelectFeed(type: FeedType) {
-        delegate?.didSelectFeed(type: type)
+        let viewModel = DetailViewModel(withFeedType: type, clientApi: clientApi)
+        let detailViewController = DetailViewController.create(withViewModel: viewModel)
+
+        delegate?.didSelect(controller: detailViewController)
     }
     
 }

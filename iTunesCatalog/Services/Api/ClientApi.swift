@@ -10,8 +10,12 @@ import Foundation
 
 final class ClientApi {
     
-    private var resourceLoader: ResourceLoader
+    // MARK: - Private properties
     
+    private var resourceLoader: ResourceLoader
+
+    // MARK: - Public methods
+
     /// Creates a new instance of the ClientApi object
     ///
     /// - Parameter resourceLoader: an instance of ResourceLoader. Defaults to NetworkService.
@@ -26,9 +30,7 @@ final class ClientApi {
         
         let moviesResource = ResourceFactory.createListMoviesResource()
         
-        resourceLoader.load(resource: moviesResource) { result in
-            completion(result)
-        }
+        getItems(withResource: moviesResource, completion: completion)
         
     }
 
@@ -38,11 +40,26 @@ final class ClientApi {
     func getSongs(onCompletion completion: @escaping (Result<ListResponse<Song>>) -> Void) {
         
         let songsResource = ResourceFactory.createListSongsResource()
+
+        getItems(withResource: songsResource, completion: completion)
         
-        resourceLoader.load(resource: songsResource) { result in
-            completion(result)
+    }
+    
+}
+
+private typealias Private = ClientApi
+private extension Private {
+
+    func getItems<T>(withResource resource: Resource<T>, completion: @escaping (Result<T>) -> Void) {
+        
+        resourceLoader.load(resource: resource) { (result) in
+            
+            DispatchQueue.main.async {
+                completion(result)
+            }
+            
         }
         
     }
-
+    
 }

@@ -14,14 +14,19 @@ protocol FlowCoordinator {
 
 final class AppCoordinator: FlowCoordinator {
     
+    // MARK: - Private properties
+    
     private var window: UIWindow
     private var listCoordinator: ListCoordinator!
     private var splitViewController: UISplitViewController?
-    
+    private let clientApi = ClientApi()
+
+    // MARK: - Public methods
+
     init(withWindow window: UIWindow) {
         self.window = window
         defer {
-            self.listCoordinator = ListCoordinator(withDelegate: self)
+            self.listCoordinator = ListCoordinator(withDelegate: self, clientApi: clientApi)
         }
     }
     
@@ -68,9 +73,8 @@ extension AppCoordinator: UISplitViewControllerDelegate {
 
 extension AppCoordinator: ListCoordinatorDelegate {
     
-    func didSelectFeed(type: FeedType) {
-        let detailViewController = DetailViewController.create(withFeedType: type)
-        splitViewController?.showDetailViewController(detailViewController, sender: nil)
+    func didSelect(controller: UIViewController) {
+        splitViewController?.showDetailViewController(controller, sender: nil)
     }
     
 }
