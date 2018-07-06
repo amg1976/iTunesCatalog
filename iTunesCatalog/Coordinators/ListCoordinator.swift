@@ -31,7 +31,7 @@ final class ListCoordinator: FlowCoordinator {
     }
     
     func start() {
-        let listViewController = ListViewController.create(withDelegate: self)
+        let listViewController = FeedListViewController.create(withDelegate: self)
         rootController.viewControllers = [listViewController]
     }
     
@@ -44,8 +44,8 @@ final class ListCoordinator: FlowCoordinator {
 extension ListCoordinator: ListViewControllerDelegate {
     
     func didSelectFeed(type: FeedType) {
-        let viewModel = DetailViewModel(withFeedType: type, clientApi: clientApi)
-        let detailViewController = DetailViewController.create(withViewModel: viewModel)
+        let viewModel = FeedDetailViewModel(withFeedType: type, clientApi: clientApi)
+        let detailViewController = FeedDetailViewController(withViewModel: viewModel)
 
         delegate?.didSelect(controller: detailViewController)
     }

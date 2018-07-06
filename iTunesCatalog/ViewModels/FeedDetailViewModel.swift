@@ -1,5 +1,5 @@
 //
-//  DetailViewModel.swift
+//  FeedDetailViewModel.swift
 //  iTunesCatalog
 //
 //  Created by Adriano Goncalves on 06/07/2018.
@@ -12,7 +12,7 @@ struct DetailItem {
     let title: String
 }
 
-final class DetailViewModel {
+final class FeedDetailViewModel {
     
     // MARK: - Private methods
     

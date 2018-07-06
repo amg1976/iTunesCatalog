@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedDetailViewController.swift
 //  iTunesCatalog
 //
 //  Created by Adriano Goncalves on 18/06/2018.
@@ -9,11 +9,11 @@
 import UIKit
 
 /// Shows a list of items from a specified FeedType
-final class DetailViewController: UIViewController {
+final class FeedDetailViewController: UIViewController {
 
     // MARK: - Private properties
 
-    private var viewModel: DetailViewModel!
+    private var viewModel: FeedDetailViewModel!
     private lazy var loadingController = LoadingViewController()
     private lazy var errorController = ErrorViewController.create { [unowned self] in
         self.load()
@@ -28,7 +28,12 @@ final class DetailViewController: UIViewController {
     // MARK: - Public methods
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("Not implemented")
+    }
+    
+    init(withViewModel viewModel: FeedDetailViewModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
     }
     
     override func viewDidLoad() {
@@ -39,22 +44,7 @@ final class DetailViewController: UIViewController {
 
 }
 
-extension DetailViewController {
-    
-    static func create(withViewModel viewModel: DetailViewModel) -> DetailViewController {
-        
-        guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? DetailViewController else {
-            fatalError("Unable to create DetailViewController")
-        }
-        
-        viewController.viewModel = viewModel
-        
-        return viewController
-    }
-    
-}
-
-private typealias Private = DetailViewController
+private typealias Private = FeedDetailViewController
 private extension Private {
     
     func setup() {

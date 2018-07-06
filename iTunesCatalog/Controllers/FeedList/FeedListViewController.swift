@@ -13,7 +13,7 @@ protocol ListViewControllerDelegate: class {
 }
 
 /// Shows a list of feed types
-final class ListViewController: UITableViewController {
+final class FeedListViewController: UITableViewController {
     
     // MARK: - Public properties
     
@@ -40,12 +40,12 @@ final class ListViewController: UITableViewController {
     
 }
 
-extension ListViewController {
+extension FeedListViewController {
 
-    static func create(withDelegate delegate: ListViewControllerDelegate) -> ListViewController {
+    static func create(withDelegate delegate: ListViewControllerDelegate) -> FeedListViewController {
         
-        guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? ListViewController else {
-            fatalError("Unable to create ListViewController")
+        guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? FeedListViewController else {
+            fatalError("Unable to create FeedListViewController")
         }
         
         viewController.delegate = delegate

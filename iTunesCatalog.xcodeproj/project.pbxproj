@@ -12,7 +12,7 @@
 		2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937120DF9E93004730F3 /* ResourceFactory.swift */; };
 		2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009937420DF9EC9004730F3 /* ClientApi.swift */; };
 		209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69BF20D85AE900C0CB9D /* AppDelegate.swift */; };
-		209F69C220D85AE900C0CB9D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69C120D85AE900C0CB9D /* DetailViewController.swift */; };
+		209F69C220D85AE900C0CB9D /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F69C120D85AE900C0CB9D /* FeedDetailViewController.swift */; };
 		209F69C520D85AE900C0CB9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C320D85AE900C0CB9D /* Main.storyboard */; };
 		209F69C720D85AEB00C0CB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C620D85AEB00C0CB9D /* Assets.xcassets */; };
 		209F69CA20D85AEB00C0CB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F69C820D85AEB00C0CB9D /* LaunchScreen.storyboard */; };
@@ -29,13 +29,13 @@
 		729B8DE120E0201400ED65A4 /* invalid_feed_item.json in Resources */ = {isa = PBXBuildFile; fileRef = 729B8DE020E0201400ED65A4 /* invalid_feed_item.json */; };
 		729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE220E03C5100ED65A4 /* Movie.swift */; };
 		729B8DE520E03C5800ED65A4 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE420E03C5800ED65A4 /* Song.swift */; };
-		729B8DE920E044CD00ED65A4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE820E044CD00ED65A4 /* ListViewController.swift */; };
+		729B8DE920E044CD00ED65A4 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DE820E044CD00ED65A4 /* FeedListViewController.swift */; };
 		729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DEB20E0475B00ED65A4 /* AppCoordinator.swift */; };
 		729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DED20E04F3700ED65A4 /* ListCoordinator.swift */; };
 		729B8DF120E052BF00ED65A4 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DF020E052BF00ED65A4 /* EmptyViewController.swift */; };
 		72A0F4B120EEE24B00A23A16 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4B020EEE24B00A23A16 /* Helpers.swift */; };
 		72A0F4B720EEE8A400A23A16 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4B620EEE8A400A23A16 /* UIViewController+Extensions.swift */; };
-		72A0F4B920EEEBCA00A23A16 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4B820EEEBCA00A23A16 /* DetailViewModel.swift */; };
+		72A0F4BB20EEF4F700A23A16 /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */; };
 		72FE2FD620EED5900087835B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD520EED5900087835B /* FeedType.swift */; };
 		72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD820EEDA440087835B /* LoadingViewController.swift */; };
 		72FE2FDC20EEDEEE0087835B /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */; };
@@ -60,7 +60,7 @@
 		2009937420DF9EC9004730F3 /* ClientApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
 		209F69BC20D85AE900C0CB9D /* iTunesCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F69BF20D85AE900C0CB9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		209F69C120D85AE900C0CB9D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		209F69C120D85AE900C0CB9D /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		209F69C420D85AE900C0CB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209F69C620D85AEB00C0CB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209F69C920D85AEB00C0CB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,13 +80,13 @@
 		729B8DE020E0201400ED65A4 /* invalid_feed_item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalid_feed_item.json; sourceTree = "<group>"; };
 		729B8DE220E03C5100ED65A4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		729B8DE420E03C5800ED65A4 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		729B8DE820E044CD00ED65A4 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		729B8DE820E044CD00ED65A4 /* FeedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
 		729B8DEB20E0475B00ED65A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		729B8DED20E04F3700ED65A4 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		729B8DF020E052BF00ED65A4 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		72A0F4B020EEE24B00A23A16 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		72A0F4B620EEE8A400A23A16 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		72A0F4B820EEEBCA00A23A16 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
 		72FE2FD520EED5900087835B /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
 		72FE2FD820EEDA440087835B /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -222,12 +222,10 @@
 		72207D7120E007D3003F2554 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				72FE2FDA20EEDEC90087835B /* Error */,
-				72FE2FD720EEDA2A0087835B /* Loading */,
+				72A0F4BD20EEF5AE00A23A16 /* Plugins */,
 				72207D7220E007DF003F2554 /* App */,
-				729B8DE720E044A400ED65A4 /* Detail */,
-				729B8DEF20E052A600ED65A4 /* Empty */,
-				729B8DE620E0449A00ED65A4 /* List */,
+				729B8DE720E044A400ED65A4 /* FeedDetail */,
+				729B8DE620E0449A00ED65A4 /* FeedList */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,20 +266,20 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		729B8DE620E0449A00ED65A4 /* List */ = {
+		729B8DE620E0449A00ED65A4 /* FeedList */ = {
 			isa = PBXGroup;
 			children = (
-				729B8DE820E044CD00ED65A4 /* ListViewController.swift */,
+				729B8DE820E044CD00ED65A4 /* FeedListViewController.swift */,
 			);
-			path = List;
+			path = FeedList;
 			sourceTree = "<group>";
 		};
-		729B8DE720E044A400ED65A4 /* Detail */ = {
+		729B8DE720E044A400ED65A4 /* FeedDetail */ = {
 			isa = PBXGroup;
 			children = (
-				209F69C120D85AE900C0CB9D /* DetailViewController.swift */,
+				209F69C120D85AE900C0CB9D /* FeedDetailViewController.swift */,
 			);
-			path = Detail;
+			path = FeedDetail;
 			sourceTree = "<group>";
 		};
 		729B8DEA20E0474900ED65A4 /* Coordinators */ = {
@@ -309,11 +307,21 @@
 			path = "UIKit+Extensions";
 			sourceTree = "<group>";
 		};
+		72A0F4BD20EEF5AE00A23A16 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				72FE2FDA20EEDEC90087835B /* Error */,
+				72FE2FD720EEDA2A0087835B /* Loading */,
+				729B8DEF20E052A600ED65A4 /* Empty */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
 		72FE2FD420EED5860087835B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */,
 				72FE2FD520EED5900087835B /* FeedType.swift */,
-				72A0F4B820EEEBCA00A23A16 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -488,18 +496,18 @@
 				729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */,
 				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,
 				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
-				72A0F4B920EEEBCA00A23A16 /* DetailViewModel.swift in Sources */,
 				72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */,
 				729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */,
 				729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */,
 				72A0F4B720EEE8A400A23A16 /* UIViewController+Extensions.swift in Sources */,
 				2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */,
 				729B8DE520E03C5800ED65A4 /* Song.swift in Sources */,
-				729B8DE920E044CD00ED65A4 /* ListViewController.swift in Sources */,
+				729B8DE920E044CD00ED65A4 /* FeedListViewController.swift in Sources */,
 				2009937220DF9E93004730F3 /* ResourceFactory.swift in Sources */,
+				72A0F4BB20EEF4F700A23A16 /* FeedDetailViewModel.swift in Sources */,
 				2009936D20DF9D61004730F3 /* Resource.swift in Sources */,
 				72FE2FD620EED5900087835B /* FeedType.swift in Sources */,
-				209F69C220D85AE900C0CB9D /* DetailViewController.swift in Sources */,
+				209F69C220D85AE900C0CB9D /* FeedDetailViewController.swift in Sources */,
 				72A0F4B120EEE24B00A23A16 /* Helpers.swift in Sources */,
 				729B8DD420E01A9600ED65A4 /* Result.swift in Sources */,
 				729B8DF120E052BF00ED65A4 /* EmptyViewController.swift in Sources */,

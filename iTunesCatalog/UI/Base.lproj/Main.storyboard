@@ -13,7 +13,7 @@
         <!--List-->
         <scene sceneID="bnJ-HT-5HK">
             <objects>
-                <tableViewController storyboardIdentifier="ListViewController" id="IDE-dS-Xwr" userLabel="List" customClass="ListViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FeedListViewController" id="IDE-dS-Xwr" userLabel="List" customClass="FeedListViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ncQ-sx-iIW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,21 +68,6 @@
             </objects>
             <point key="canvasLocation" x="679" y="-483"/>
         </scene>
-        <!--Detail-->
-        <scene sceneID="oCY-dY-vN4">
-            <objects>
-                <viewController storyboardIdentifier="DetailViewController" title="Detail" id="zgv-a4-Dht" customClass="DetailViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I24-YG-2JD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="aEs-GZ-EVO"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsF-0e-ARM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1337" y="-481"/>
-        </scene>
         <!--Empty View Controller-->
         <scene sceneID="TJh-FT-8Uv">
             <objects>
@@ -108,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHk-0O-J8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2009" y="-482"/>
+            <point key="canvasLocation" x="1319" y="-482"/>
         </scene>
         <!--Error View Controller-->
         <scene sceneID="TNK-MF-tmA">
@@ -149,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m05-ff-M2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642" y="-484"/>
+            <point key="canvasLocation" x="1951" y="-484"/>
         </scene>
     </scenes>
 </document>
