@@ -10,10 +10,14 @@ import UIKit
 
 final class EmptyViewController: UIViewController {
 
+    // MARK: - Private init
+
     override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
     }
     
+    // MARK: - Public methods
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

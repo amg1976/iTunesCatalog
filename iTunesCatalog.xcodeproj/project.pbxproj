@@ -33,7 +33,11 @@
 		729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DEB20E0475B00ED65A4 /* AppCoordinator.swift */; };
 		729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DED20E04F3700ED65A4 /* ListCoordinator.swift */; };
 		729B8DF120E052BF00ED65A4 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B8DF020E052BF00ED65A4 /* EmptyViewController.swift */; };
+		72A0F4B120EEE24B00A23A16 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4B020EEE24B00A23A16 /* Helpers.swift */; };
+		72A0F4B720EEE8A400A23A16 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4B620EEE8A400A23A16 /* UIViewController+Extensions.swift */; };
 		72FE2FD620EED5900087835B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD520EED5900087835B /* FeedType.swift */; };
+		72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD820EEDA440087835B /* LoadingViewController.swift */; };
+		72FE2FDC20EEDEEE0087835B /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */; };
 		887F9EC19F7845A0442CB1B7 /* Pods_iTunesCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +83,11 @@
 		729B8DEB20E0475B00ED65A4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		729B8DED20E04F3700ED65A4 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		729B8DF020E052BF00ED65A4 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		72A0F4B020EEE24B00A23A16 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		72A0F4B620EEE8A400A23A16 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		72FE2FD520EED5900087835B /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
+		72FE2FD820EEDA440087835B /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		A3F5AA94D4D49CE8BBAEF83C /* Pods-iTunesCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesCatalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesCatalog/Pods-iTunesCatalog.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FB70F3F99EB9F9980EBFE1 /* Pods_iTunesCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -212,6 +220,8 @@
 		72207D7120E007D3003F2554 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				72FE2FDA20EEDEC90087835B /* Error */,
+				72FE2FD720EEDA2A0087835B /* Loading */,
 				72207D7220E007DF003F2554 /* App */,
 				729B8DE720E044A400ED65A4 /* Detail */,
 				729B8DEF20E052A600ED65A4 /* Empty */,
@@ -249,7 +259,9 @@
 		729B8DD520E01C8100ED65A4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				72A0F4B520EEE89200A23A16 /* UIKit+Extensions */,
 				729B8DD320E01A9600ED65A4 /* Result.swift */,
+				72A0F4B020EEE24B00A23A16 /* Helpers.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -287,12 +299,36 @@
 			path = Empty;
 			sourceTree = "<group>";
 		};
+		72A0F4B520EEE89200A23A16 /* UIKit+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72A0F4B620EEE8A400A23A16 /* UIViewController+Extensions.swift */,
+			);
+			path = "UIKit+Extensions";
+			sourceTree = "<group>";
+		};
 		72FE2FD420EED5860087835B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				72FE2FD520EED5900087835B /* FeedType.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		72FE2FD720EEDA2A0087835B /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				72FE2FD820EEDA440087835B /* LoadingViewController.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		72FE2FDA20EEDEC90087835B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		EAAE641C3685542FF275BC96 /* Frameworks */ = {
@@ -449,8 +485,10 @@
 				729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */,
 				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,
 				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
+				72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */,
 				729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */,
 				729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */,
+				72A0F4B720EEE8A400A23A16 /* UIViewController+Extensions.swift in Sources */,
 				2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */,
 				729B8DE520E03C5800ED65A4 /* Song.swift in Sources */,
 				729B8DE920E044CD00ED65A4 /* ListViewController.swift in Sources */,
@@ -458,8 +496,10 @@
 				2009936D20DF9D61004730F3 /* Resource.swift in Sources */,
 				72FE2FD620EED5900087835B /* FeedType.swift in Sources */,
 				209F69C220D85AE900C0CB9D /* DetailViewController.swift in Sources */,
+				72A0F4B120EEE24B00A23A16 /* Helpers.swift in Sources */,
 				729B8DD420E01A9600ED65A4 /* Result.swift in Sources */,
 				729B8DF120E052BF00ED65A4 /* EmptyViewController.swift in Sources */,
+				72FE2FDC20EEDEEE0087835B /* ErrorViewController.swift in Sources */,
 				209F69C020D85AE900C0CB9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

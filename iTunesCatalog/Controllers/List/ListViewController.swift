@@ -15,12 +15,18 @@ protocol ListViewControllerDelegate: class {
 /// Shows a list of feed types
 final class ListViewController: UITableViewController {
     
+    // MARK: - Public properties
+    
     private (set) weak var delegate: ListViewControllerDelegate?
+    
+    // MARK: - Private init
     
     override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
     }
     
+    // MARK: - Public methods
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

@@ -110,5 +110,46 @@
             </objects>
             <point key="canvasLocation" x="2009" y="-482"/>
         </scene>
+        <!--Error View Controller-->
+        <scene sceneID="TNK-MF-tmA">
+            <objects>
+                <viewController storyboardIdentifier="ErrorViewController" id="42Y-g5-Yms" customClass="ErrorViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="30F-H8-pLa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Na-ZC-fpd">
+                                <rect key="frame" x="0.0" y="303.5" width="375" height="60.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-D3-5Yz">
+                                        <rect key="frame" x="166" y="0.0" width="43" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrR-de-3HI">
+                                        <rect key="frame" x="164.5" y="30.5" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Na-ZC-fpd" firstAttribute="centerY" secondItem="30F-H8-pLa" secondAttribute="centerY" id="R2e-m1-nnD"/>
+                            <constraint firstItem="8Na-ZC-fpd" firstAttribute="leading" secondItem="7P5-3M-RMm" secondAttribute="leading" id="Ywl-2M-01x"/>
+                            <constraint firstItem="7P5-3M-RMm" firstAttribute="trailing" secondItem="8Na-ZC-fpd" secondAttribute="trailing" id="ePk-0G-p3c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7P5-3M-RMm"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="ubu-D3-5Yz" id="YcM-G4-Tg8"/>
+                        <outlet property="retryButton" destination="PrR-de-3HI" id="eEj-ub-xzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m05-ff-M2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2642" y="-484"/>
+        </scene>
     </scenes>
 </document>

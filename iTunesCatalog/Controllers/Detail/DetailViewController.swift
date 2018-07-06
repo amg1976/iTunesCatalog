@@ -11,12 +11,23 @@ import UIKit
 /// Shows a list of items from a specified FeedType
 final class DetailViewController: UIViewController {
 
+    // MARK: - Private properties
+
     private var feedType: FeedType!
-    
-    override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nil, bundle: nil)
+    private lazy var loadingController = LoadingViewController()
+    private lazy var errorController = ErrorViewController.create { [unowned self] in
+        self.hide(self.errorController)
+        self.show(self.loadingController)
     }
-    
+
+    // MARK: - Private init
+
+    override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        fatalError("Not implemented")
+    }
+
+    // MARK: - Public methods
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -24,6 +35,12 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        show(loadingController)
+        
+        delay(1) {
+            self.hide(self.loadingController)
+            self.show(self.errorController)
+        }
     }
 
 }
@@ -49,5 +66,5 @@ private extension Private {
     func setup() {
         navigationItem.title = feedType.controllerTitle
     }
-    
+
 }
