@@ -64,7 +64,7 @@ extension ListCoordinator: ListViewControllerDelegate {
 
 extension ListCoordinator: FeedDetailViewModelDelegate {
     
-    func didSelectFeedItem(_ item: Item) {
+    func didSelectFeedItem(_ item: ItemDetailViewModel) {
         let controller = ItemDetailViewController.create(withItem: item)
         innerNavigationController?.pushViewController(controller, animated: true)
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FeedDetailViewModelDelegate: AnyObject {
-    func didSelectFeedItem(_ item: Item)
+    func didSelectFeedItem(_ item: ItemDetailViewModel)
 }
 
 final class FeedDetailViewModel {
@@ -52,7 +52,7 @@ final class FeedDetailViewModel {
                 switch result {
                     
                 case .succeeded(let movies):
-                    let items: [Item] = movies.feed.results.map({ Item(title: $0.name) })
+                    let items: [ItemDetailViewModel] = movies.feed.results.map({ ItemDetailViewModel(title: $0.name) })
                     let viewModel = ItemCollectionViewModel(withTitle: movies.feed.title,
                                                             items: items,
                                                             userInterfaceIdiom: strongSelf.userInterfaceIdiom,
@@ -72,7 +72,7 @@ final class FeedDetailViewModel {
                 switch result {
                     
                 case .succeeded(let songs):
-                    let items: [Item] = songs.feed.results.map({ Item(title: $0.name) })
+                    let items: [ItemDetailViewModel] = songs.feed.results.map({ ItemDetailViewModel(title: $0.name) })
                     let viewModel = ItemCollectionViewModel(withTitle: songs.feed.title,
                                                             items: items,
                                                             userInterfaceIdiom: strongSelf.userInterfaceIdiom,
@@ -92,7 +92,7 @@ final class FeedDetailViewModel {
 
 extension FeedDetailViewModel: ItemCollectionViewModelDelegate {
     
-    func didSelect(item: Item) {
+    func didSelect(item: ItemDetailViewModel) {
         delegate?.didSelectFeedItem(item)
     }
 }

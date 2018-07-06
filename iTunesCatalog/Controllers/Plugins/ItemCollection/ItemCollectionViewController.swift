@@ -15,9 +15,9 @@ final class ItemCollectionCell: UICollectionViewCell {
         return String(describing: ItemCollectionCell.self)
     }
     
-    private (set) var item: Item?
+    private (set) var item: ItemDetailViewModel?
     
-    func configure(withItem item: Item) {
+    func configure(withItem item: ItemDetailViewModel) {
         self.item = item
         self.backgroundColor = .red
     }
@@ -32,9 +32,9 @@ final class ItemCollectionViewController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     private var viewModel: ItemCollectionViewModel! {
         didSet {
-            loadViewIfNeeded()
             collectionView.dataSource = viewModel
             collectionView.delegate = viewModel
+            (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = viewModel.itemSize
         }
     }
 
@@ -65,6 +65,7 @@ extension ItemCollectionViewController {
             fatalError("Unable to create ItemCollectionViewController")
         }
         
+        viewController.loadViewIfNeeded()
         viewController.viewModel = viewModel
         
         return viewController
@@ -77,7 +78,6 @@ private extension Private {
     
     func setup() {
         collectionView.register(ItemCollectionCell.self, forCellWithReuseIdentifier: ItemCollectionCell.reusableIdentifier)
-        (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = viewModel.itemSize
     }
     
 }

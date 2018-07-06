@@ -8,12 +8,8 @@
 
 import UIKit
 
-struct Item {
-    let title: String
-}
-
 protocol ItemCollectionViewModelDelegate: AnyObject {
-    func didSelect(item: Item)
+    func didSelect(item: ItemDetailViewModel)
 }
 
 /// ViewModel for the ItemCollectionViewController
@@ -21,7 +17,7 @@ final class ItemCollectionViewModel: NSObject {
 
     // MARK: - Private properties
 
-    private var items: [Item]
+    private var items: [ItemDetailViewModel]
     private var userInterfaceIdiom: UIUserInterfaceIdiom
     private weak var delegate: ItemCollectionViewModelDelegate?
 
@@ -42,7 +38,7 @@ final class ItemCollectionViewModel: NSObject {
     // MARK: - Public methods
     
     init(withTitle title: String,
-         items: [Item],
+         items: [ItemDetailViewModel],
          userInterfaceIdiom: UIUserInterfaceIdiom,
          delegate: ItemCollectionViewModelDelegate) {
         self.title = title

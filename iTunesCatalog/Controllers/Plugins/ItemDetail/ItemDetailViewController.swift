@@ -17,10 +17,9 @@ final class ItemDetailViewController: UIViewController {
     @IBOutlet private weak var itemTitleLabel: UILabel!
     @IBOutlet private weak var itemSubtitleLabel: UILabel!
     
-    private var item: Item! {
+    private var item: ItemDetailViewModel! {
         didSet {
             guard let item = item else { return }
-            loadViewIfNeeded()
             itemTitleLabel.text = item.title
         }
     }
@@ -29,12 +28,13 @@ final class ItemDetailViewController: UIViewController {
 
 extension ItemDetailViewController {
     
-    static func create(withItem item: Item) -> ItemDetailViewController {
+    static func create(withItem item: ItemDetailViewModel) -> ItemDetailViewController {
         
         guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? ItemDetailViewController else {
             fatalError("Unable to create ItemDetailViewController")
         }
         
+        viewController.loadViewIfNeeded()
         viewController.item = item
         
         return viewController

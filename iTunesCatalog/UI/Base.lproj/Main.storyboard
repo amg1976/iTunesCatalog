@@ -218,11 +218,9 @@
                             <constraint firstItem="CYy-Wp-Ve0" firstAttribute="centerX" secondItem="jcM-yM-V1a" secondAttribute="centerX" id="4pT-AK-KF0"/>
                             <constraint firstItem="XU2-EJ-94k" firstAttribute="trailing" secondItem="GFm-1k-00h" secondAttribute="trailing" id="5hF-bw-j6D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GFm-1k-00h" secondAttribute="trailing" id="9MR-HS-4p0"/>
-                            <constraint firstItem="XU2-EJ-94k" firstAttribute="centerX" secondItem="jcM-yM-V1a" secondAttribute="centerX" id="VSE-ao-Q2x"/>
                             <constraint firstItem="GFm-1k-00h" firstAttribute="top" secondItem="CYy-Wp-Ve0" secondAttribute="bottom" constant="25" id="Vbd-bc-NIg"/>
                             <constraint firstItem="GFm-1k-00h" firstAttribute="leading" secondItem="jcM-yM-V1a" secondAttribute="leadingMargin" id="aOk-NF-dWe"/>
                             <constraint firstItem="XU2-EJ-94k" firstAttribute="leading" secondItem="GFm-1k-00h" secondAttribute="leading" id="eHU-1J-3uP"/>
-                            <constraint firstItem="GFm-1k-00h" firstAttribute="centerX" secondItem="jcM-yM-V1a" secondAttribute="centerX" id="oFn-BR-y8E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qoz-Mt-O9U"/>
                     </view>
