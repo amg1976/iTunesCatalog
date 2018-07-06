@@ -53,7 +53,7 @@ final class FeedDetailViewModel {
                 switch result {
                     
                 case .succeeded(let movies):
-                    let items: [ItemDetailViewModel] = movies.feed.results.map({ ItemDetailViewModel(title: $0.name) })
+                    let items: [ItemDetailViewModel] = movies.feed.results.map { ItemDetailViewModel(title: $0.name, subtitle: $0.artistName, imageUrl: $0.artworkUrl100) }
                     let viewModel = ItemCollectionViewModel(withTitle: movies.feed.title,
                                                             items: items,
                                                             isIpad: strongSelf.isIpad,
@@ -73,7 +73,7 @@ final class FeedDetailViewModel {
                 switch result {
                     
                 case .succeeded(let songs):
-                    let items: [ItemDetailViewModel] = songs.feed.results.map({ ItemDetailViewModel(title: $0.name) })
+                    let items: [ItemDetailViewModel] = songs.feed.results.map { ItemDetailViewModel(title: $0.name, subtitle: $0.artistName, imageUrl: $0.artworkUrl100) }
                     let viewModel = ItemCollectionViewModel(withTitle: songs.feed.title,
                                                             items: items,
                                                             isIpad: strongSelf.isIpad,

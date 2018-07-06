@@ -12,5 +12,6 @@ import Foundation
 struct Movie: FeedItem {
     let id: String
     let name: String
-    let url: String
+    let artistName: String
+    let artworkUrl100: String
 }

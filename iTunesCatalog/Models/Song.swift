@@ -12,7 +12,7 @@ import Foundation
 struct Song: FeedItem {
     let id: String
     let name: String
-    let url: String
+    let artworkUrl100: String
     let artistName: String
     let collectionName: String
 }

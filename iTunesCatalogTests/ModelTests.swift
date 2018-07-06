@@ -12,7 +12,8 @@ import XCTest
 struct AnyItem: FeedItem {
     let id: String
     let name: String
-    let url: String
+    let artistName: String
+    let artworkUrl100: String
 }
 
 func createMockResource() -> Resource<ListResponse<AnyItem>> {
@@ -35,7 +36,7 @@ class ModelTests: XCTestCase {
         let firstItem = list!.feed.results.first!
         XCTAssertEqual(firstItem.id, "1342077359")
         XCTAssertEqual(firstItem.name, "Black Panther (2018)")
-        XCTAssertEqual(firstItem.url, "https://itunes.apple.com/ie/movie/black-panther-2018/id1342077359")
+        XCTAssertEqual(firstItem.artworkUrl100, "https://is1-ssl.mzstatic.com/image/thumb/Video118/v4/7e/ae/6f/7eae6f6a-e11d-3221-4648-a0848fd2cf14/pr_source.lsr/200x200bb.png")
     }
 
     func testParseSongs() {
@@ -50,7 +51,7 @@ class ModelTests: XCTestCase {
         let firstItem = list!.feed.results.first!
         XCTAssertEqual(firstItem.id, "1331589486")
         XCTAssertEqual(firstItem.name, "Shotgun")
-        XCTAssertEqual(firstItem.url, "https://itunes.apple.com/ie/album/shotgun/1331589118?i=1331589486&app=itunes")
+        XCTAssertEqual(firstItem.artworkUrl100, "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/a9/5c/67/a95c6764-ccf4-2e23-0a63-06332d2a2f98/source/200x200bb.png")
         XCTAssertEqual(firstItem.artistName, "George Ezra")
         XCTAssertEqual(firstItem.collectionName, "Staying at Tamara's")
     }

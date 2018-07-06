@@ -20,7 +20,9 @@ final class ItemDetailViewController: UIViewController {
     private var item: ItemDetailViewModel! {
         didSet {
             guard let item = item else { return }
+            itemImageView.backgroundColor = .lightGray
             itemTitleLabel.text = item.title
+            itemSubtitleLabel.text = item.subtitle
         }
     }
     

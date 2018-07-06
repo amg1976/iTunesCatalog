@@ -12,7 +12,8 @@ import Foundation
 protocol FeedItem: Codable {
     var id: String { get }
     var name: String { get }
-    var url: String { get }
+    var artistName: String { get }
+    var artworkUrl100: String { get }
 }
 
 /// Models the root element of the ListResponse object
