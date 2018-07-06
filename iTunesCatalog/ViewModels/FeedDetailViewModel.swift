@@ -8,10 +8,6 @@
 
 import Foundation
 
-struct DetailItem {
-    let title: String
-}
-
 final class FeedDetailViewModel {
     
     // MARK: - Private methods
@@ -32,7 +28,7 @@ final class FeedDetailViewModel {
         self.clientApi = clientApi
     }
     
-    func loadData(onCompletion completion: @escaping (Result<[DetailItem]>) -> Void) {
+    func loadData(onCompletion completion: @escaping (Result<ItemCollectionViewModel>) -> Void) {
         
         switch feedType {
             
@@ -42,8 +38,9 @@ final class FeedDetailViewModel {
                 switch result {
                     
                 case .succeeded(let movies):
-                    print(movies.feed.title)
-                    completion(Result.succeeded([]))
+                    let items: [Item] = movies.feed.results.map({ Item(title: $0.name) })
+                    let viewModel = ItemCollectionViewModel(withTitle: movies.feed.title, items: items)
+                    completion(Result.succeeded(viewModel))
                     
                 case .errored(let error):
                     completion(Result.errored(error))
@@ -56,9 +53,10 @@ final class FeedDetailViewModel {
                 switch result {
                     
                 case .succeeded(let songs):
-                    print(songs.feed.title)
-                    completion(Result.succeeded([]))
-                    
+                    let items: [Item] = songs.feed.results.map({ Item(title: $0.name) })
+                    let viewModel = ItemCollectionViewModel(withTitle: songs.feed.title, items: items)
+                    completion(Result.succeeded(viewModel))
+
                 case .errored(let error):
                     completion(Result.errored(error))
                 }

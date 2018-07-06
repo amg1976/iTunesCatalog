@@ -36,6 +36,8 @@
 		72A0F4B120EEE24B00A23A16 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4B020EEE24B00A23A16 /* Helpers.swift */; };
 		72A0F4B720EEE8A400A23A16 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4B620EEE8A400A23A16 /* UIViewController+Extensions.swift */; };
 		72A0F4BB20EEF4F700A23A16 /* FeedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */; };
+		72A0F4C020EEF81B00A23A16 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4BF20EEF81B00A23A16 /* ItemCollectionViewController.swift */; };
+		72A0F4C220EEF93900A23A16 /* ItemCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4C120EEF93900A23A16 /* ItemCollectionViewModel.swift */; };
 		72FE2FD620EED5900087835B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD520EED5900087835B /* FeedType.swift */; };
 		72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD820EEDA440087835B /* LoadingViewController.swift */; };
 		72FE2FDC20EEDEEE0087835B /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */; };
@@ -87,6 +89,8 @@
 		72A0F4B020EEE24B00A23A16 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		72A0F4B620EEE8A400A23A16 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewModel.swift; sourceTree = "<group>"; };
+		72A0F4BF20EEF81B00A23A16 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
+		72A0F4C120EEF93900A23A16 /* ItemCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewModel.swift; sourceTree = "<group>"; };
 		72FE2FD520EED5900087835B /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
 		72FE2FD820EEDA440087835B /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -310,6 +314,7 @@
 		72A0F4BD20EEF5AE00A23A16 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				72A0F4BE20EEF80700A23A16 /* ItemCollection */,
 				72FE2FDA20EEDEC90087835B /* Error */,
 				72FE2FD720EEDA2A0087835B /* Loading */,
 				729B8DEF20E052A600ED65A4 /* Empty */,
@@ -317,11 +322,20 @@
 			path = Plugins;
 			sourceTree = "<group>";
 		};
+		72A0F4BE20EEF80700A23A16 /* ItemCollection */ = {
+			isa = PBXGroup;
+			children = (
+				72A0F4BF20EEF81B00A23A16 /* ItemCollectionViewController.swift */,
+			);
+			path = ItemCollection;
+			sourceTree = "<group>";
+		};
 		72FE2FD420EED5860087835B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				72A0F4BA20EEF4F700A23A16 /* FeedDetailViewModel.swift */,
 				72FE2FD520EED5900087835B /* FeedType.swift */,
+				72A0F4C120EEF93900A23A16 /* ItemCollectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -494,7 +508,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */,
+				72A0F4C220EEF93900A23A16 /* ItemCollectionViewModel.swift in Sources */,
 				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,
+				72A0F4C020EEF81B00A23A16 /* ItemCollectionViewController.swift in Sources */,
 				20EDC58F20DC416300AEC894 /* NetworkService.swift in Sources */,
 				72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */,
 				729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */,

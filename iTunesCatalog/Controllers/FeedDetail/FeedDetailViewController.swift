@@ -18,6 +18,7 @@ final class FeedDetailViewController: UIViewController {
     private lazy var errorController = ErrorViewController.create { [unowned self] in
         self.load()
     }
+    private var collectionController: ItemCollectionViewController?
 
     // MARK: - Private init
 
@@ -41,13 +42,14 @@ final class FeedDetailViewController: UIViewController {
         setup()
         load()
     }
-
+    
 }
 
 private typealias Private = FeedDetailViewController
 private extension Private {
     
     func setup() {
+        view.backgroundColor = .white
         navigationItem.title = viewModel.controllerTitle
     }
     
@@ -59,15 +61,17 @@ private extension Private {
         viewModel.loadData { [weak self] (result) in
             
             guard let strongSelf = self else { return }
-            
+
+            strongSelf.hide(strongSelf.loadingController)
+
             switch result {
                 
-            case .succeeded(let items):
-                print(items.count)
+            case .succeeded(let collectionViewModel):
+                strongSelf.collectionController = ItemCollectionViewController.create(withViewModel: collectionViewModel)
+                strongSelf.show(strongSelf.collectionController!)
                 
             case .errored(let error):
                 strongSelf.errorController.error = error
-                strongSelf.hide(strongSelf.loadingController)
                 strongSelf.show(strongSelf.errorController)
             }
 
