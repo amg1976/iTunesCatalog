@@ -6,7 +6,7 @@
 //  Copyright © 2018 Adriano Goncalves. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol FeedDetailViewModelDelegate: AnyObject {
     func didSelectFeedItem(_ item: ItemDetailViewModel)
@@ -19,7 +19,7 @@ final class FeedDetailViewModel {
     
     private let feedType: FeedType
     private let clientApi: ClientApi
-    private let userInterfaceIdiom: UIUserInterfaceIdiom
+    private let isIpad: Bool
     private weak var delegate: FeedDetailViewModelDelegate?
 
     // MARK: - Public properties
@@ -32,12 +32,12 @@ final class FeedDetailViewModel {
     
     init(withFeedType feedType: FeedType,
          clientApi: ClientApi,
-         userInterfaceIdiom: UIUserInterfaceIdiom,
+         isIpad: Bool,
          delegate: FeedDetailViewModelDelegate) {
         
         self.feedType = feedType
         self.clientApi = clientApi
-        self.userInterfaceIdiom = userInterfaceIdiom
+        self.isIpad = isIpad
         self.delegate = delegate
     }
     
@@ -56,7 +56,7 @@ final class FeedDetailViewModel {
                     let items: [ItemDetailViewModel] = movies.feed.results.map({ ItemDetailViewModel(title: $0.name) })
                     let viewModel = ItemCollectionViewModel(withTitle: movies.feed.title,
                                                             items: items,
-                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom,
+                                                            isIpad: strongSelf.isIpad,
                                                             delegate: strongSelf)
                     completion(Result.succeeded(viewModel))
                     
@@ -76,7 +76,7 @@ final class FeedDetailViewModel {
                     let items: [ItemDetailViewModel] = songs.feed.results.map({ ItemDetailViewModel(title: $0.name) })
                     let viewModel = ItemCollectionViewModel(withTitle: songs.feed.title,
                                                             items: items,
-                                                            userInterfaceIdiom: strongSelf.userInterfaceIdiom,
+                                                            isIpad: strongSelf.isIpad,
                                                             delegate: strongSelf)
                     completion(Result.succeeded(viewModel))
 

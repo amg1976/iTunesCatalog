@@ -49,7 +49,7 @@ extension ListCoordinator: ListViewControllerDelegate {
         
         let viewModel = FeedDetailViewModel(withFeedType: type,
                                             clientApi: clientApi,
-                                            userInterfaceIdiom: UIDevice.current.userInterfaceIdiom,
+                                            isIpad: (UIDevice.current.userInterfaceIdiom == .pad),
                                             delegate: self)
         
         let detailViewController = FeedDetailViewController(withViewModel: viewModel)

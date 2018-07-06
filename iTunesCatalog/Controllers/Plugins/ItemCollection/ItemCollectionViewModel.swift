@@ -6,7 +6,7 @@
 //  Copyright © 2018 Adriano Goncalves. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol ItemCollectionViewModelDelegate: AnyObject {
     func didSelect(item: ItemDetailViewModel)
@@ -18,65 +18,31 @@ final class ItemCollectionViewModel: NSObject {
     // MARK: - Private properties
 
     private var items: [ItemDetailViewModel]
-    private var userInterfaceIdiom: UIUserInterfaceIdiom
-    private weak var delegate: ItemCollectionViewModelDelegate?
+    private var isIpad: Bool
 
     // MARK: - Public properties
     
+    private (set) weak var delegate: ItemCollectionViewModelDelegate?
+    var itemCount: Int { return items.count }
     let title: String
-    var itemSize: CGSize {
-        switch userInterfaceIdiom {
-        case .phone:
-            return CGSize(width: 100, height: 100)
-        case .pad:
-            return CGSize(width: 200, height: 200)
-        case .tv, .carPlay, .unspecified:
-            return .zero
-        }
+    var itemSize: (width: Float, height: Float) {
+        return isIpad ? (200, 200) : (100, 100)
     }
 
     // MARK: - Public methods
     
     init(withTitle title: String,
          items: [ItemDetailViewModel],
-         userInterfaceIdiom: UIUserInterfaceIdiom,
+         isIpad: Bool,
          delegate: ItemCollectionViewModelDelegate) {
         self.title = title
         self.items = items
-        self.userInterfaceIdiom = userInterfaceIdiom
+        self.isIpad = isIpad
         self.delegate = delegate
     }
-}
-
-extension ItemCollectionViewModel: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+    func itemAt(indexPath: IndexPath) -> ItemDetailViewModel? {
+        guard (0..<itemCount).contains(indexPath.item) else { return nil }
+        return items[indexPath.item]
     }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let item = items[indexPath.item]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionCell.reusableIdentifier, for: indexPath)
-        
-        if let cell = cell as? ItemCollectionCell {
-            cell.configure(withItem: item)
-        }
-        
-        return cell
-    }
-    
-}
-
-extension ItemCollectionViewModel: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        if let cell = collectionView.cellForItem(at: indexPath) as? ItemCollectionCell,
-            let item = cell.item {
-            delegate?.didSelect(item: item)
-        }
-        
-    }
-    
 }

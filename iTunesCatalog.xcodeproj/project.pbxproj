@@ -44,6 +44,7 @@
 		72A0F4D220EFB8DC00A23A16 /* list_songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 72207D6B20DFFE53003F2554 /* list_songs.json */; };
 		72A0F4D520EFC20E00A23A16 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A0F4D420EFC20E00A23A16 /* ItemDetailViewController.swift */; };
 		72FBAF9120EFCE7F00C115C5 /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBAF9020EFCE7F00C115C5 /* ItemDetailViewModel.swift */; };
+		72FBAF9320F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBAF9220F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift */; };
 		72FE2FD620EED5900087835B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD520EED5900087835B /* FeedType.swift */; };
 		72FE2FD920EEDA440087835B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD820EEDA440087835B /* LoadingViewController.swift */; };
 		72FE2FDC20EEDEEE0087835B /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */; };
@@ -100,6 +101,7 @@
 		72A0F4CE20EFB79D00A23A16 /* LocalFilesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilesService.swift; sourceTree = "<group>"; };
 		72A0F4D420EFC20E00A23A16 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		72FBAF9020EFCE7F00C115C5 /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		72FBAF9220F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemCollectionViewModel+Extensions.swift"; sourceTree = "<group>"; };
 		72FE2FD520EED5900087835B /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
 		72FE2FD820EEDA440087835B /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		72FE2FDB20EEDEEE0087835B /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			children = (
 				72A0F4BF20EEF81B00A23A16 /* ItemCollectionViewController.swift */,
 				72A0F4C120EEF93900A23A16 /* ItemCollectionViewModel.swift */,
+				72FBAF9220F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift */,
 			);
 			path = ItemCollection;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				729B8DEE20E04F3700ED65A4 /* ListCoordinator.swift in Sources */,
 				729B8DE320E03C5100ED65A4 /* Movie.swift in Sources */,
 				72A0F4B720EEE8A400A23A16 /* UIViewController+Extensions.swift in Sources */,
+				72FBAF9320F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift in Sources */,
 				2009937520DF9EC9004730F3 /* ClientApi.swift in Sources */,
 				729B8DE520E03C5800ED65A4 /* Song.swift in Sources */,
 				729B8DE920E044CD00ED65A4 /* FeedListViewController.swift in Sources */,

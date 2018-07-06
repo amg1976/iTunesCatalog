@@ -34,7 +34,7 @@ final class ItemCollectionViewController: UIViewController {
         didSet {
             collectionView.dataSource = viewModel
             collectionView.delegate = viewModel
-            (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = viewModel.itemSize
+            (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = CGSize(width: CGFloat(viewModel.itemSize.width), height: CGFloat(viewModel.itemSize.height))
         }
     }
 
