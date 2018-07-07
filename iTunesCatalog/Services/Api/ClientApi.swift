@@ -10,9 +10,9 @@ import Foundation
 
 final class ClientApi {
     
-    // MARK: - Private properties
+    // MARK: - Public properties
     
-    private var resourceLoader: ResourceLoader
+    private (set) var resourceLoader: ResourceLoader
 
     // MARK: - Public methods
 
@@ -25,7 +25,7 @@ final class ClientApi {
     
     /// Fetchs a list of movies from the resource loader
     ///
-    /// - Parameter completion: returns an instance of ListResponse<Movie> or nil if it fails fetching / parsing.
+    /// - Parameter completion: returns an instance of ListResponse<Movie> or an Error if it fails fetching / parsing.
     func getMovies(onCompletion completion: @escaping (Result<ListResponse<Movie>>) -> Void) {
         
         let moviesResource = ResourceFactory.createListMoviesResource()
@@ -36,7 +36,7 @@ final class ClientApi {
 
     /// Fetchs a list of songs from the resource loader
     ///
-    /// - Parameter completion: returns an instance of ListResponse<Song> or nil if it fails fetching / parsing.
+    /// - Parameter completion: returns an instance of ListResponse<Song> or an Error if it fails fetching / parsing.
     func getSongs(onCompletion completion: @escaping (Result<ListResponse<Song>>) -> Void) {
         
         let songsResource = ResourceFactory.createListSongsResource()
@@ -52,7 +52,7 @@ private extension Private {
 
     func getItems<T>(withResource resource: Resource<T>, completion: @escaping (Result<T>) -> Void) {
         
-        resourceLoader.load(resource: resource) { (result) in
+        resourceLoader.load(resource: resource) { result in
             
             DispatchQueue.main.async {
                 completion(result)

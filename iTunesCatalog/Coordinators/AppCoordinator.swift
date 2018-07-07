@@ -20,7 +20,7 @@ final class AppCoordinator: FlowCoordinator {
     private var window: UIWindow
     private var listCoordinator: ListCoordinator!
     private var splitViewController: UISplitViewController?
-    private let clientApi = ClientApi(withResourceLoader: LocalFilesService())
+    private let clientApi = ClientApi()
 
     // MARK: - Public methods
 

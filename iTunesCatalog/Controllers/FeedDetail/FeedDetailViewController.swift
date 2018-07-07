@@ -67,7 +67,7 @@ private extension Private {
             switch result {
                 
             case .succeeded(let collectionViewModel):
-                strongSelf.collectionController = ItemCollectionViewController.create(withViewModel: collectionViewModel)
+                strongSelf.collectionController = ItemCollectionViewController(withViewModel: collectionViewModel)
                 strongSelf.show(strongSelf.collectionController!)
                 
             case .errored(let error):

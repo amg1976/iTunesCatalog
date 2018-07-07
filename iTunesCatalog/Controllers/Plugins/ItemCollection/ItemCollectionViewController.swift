@@ -8,76 +8,59 @@
 
 import UIKit
 
-/// Cell used for displaying Feed items on a collection view
-final class ItemCollectionCell: UICollectionViewCell {
-    
-    static var reusableIdentifier: String {
-        return String(describing: ItemCollectionCell.self)
-    }
-    
-    private (set) var item: ItemDetailViewModel?
-    
-    func configure(withItem item: ItemDetailViewModel) {
-        self.item = item
-        self.backgroundColor = .red
-    }
-    
-}
-
 /// Shows a collection of Feed items
 final class ItemCollectionViewController: UIViewController {
     
     // MARK: - Private properties
     
-    @IBOutlet private weak var collectionView: UICollectionView!
-    private var viewModel: ItemCollectionViewModel! {
-        didSet {
-            collectionView.dataSource = viewModel
-            collectionView.delegate = viewModel
-            (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = CGSize(width: CGFloat(viewModel.itemSize.width), height: CGFloat(viewModel.itemSize.height))
-        }
-    }
+    private let collectionView: UICollectionView = {
+        let result = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        result.translatesAutoresizingMaskIntoConstraints = false
+        result.backgroundColor = .white
+        return result
+    }()
+    
+    private var viewModel: ItemCollectionViewModel!
 
     // MARK: - Private init
     
     override private init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nil, bundle: nil)
+        fatalError("Not implemented")
     }
     
     // MARK: - Public methods
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("Not implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    init(withViewModel viewModel: ItemCollectionViewModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
         setup()
     }
 
-}
-
-extension ItemCollectionViewController {
-    
-    static func create(withViewModel viewModel: ItemCollectionViewModel) -> ItemCollectionViewController {
-        
-        guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? ItemCollectionViewController else {
-            fatalError("Unable to create ItemCollectionViewController")
-        }
-        
-        viewController.loadViewIfNeeded()
-        viewController.viewModel = viewModel
-        
-        return viewController
-    }
-    
 }
 
 private typealias Private = ItemCollectionViewController
 private extension Private {
     
     func setup() {
+
+        view.backgroundColor = .white
+        
+        view.addSubview(collectionView)
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leftAnchor.constraint(equalTo: view.leftAnchor)
+            ])
+
         collectionView.register(ItemCollectionCell.self, forCellWithReuseIdentifier: ItemCollectionCell.reusableIdentifier)
+        collectionView.dataSource = viewModel
+        collectionView.delegate = viewModel
+        (collectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.itemSize = CGSize(width: CGFloat(viewModel.itemSize.width), height: CGFloat(viewModel.itemSize.height))
     }
     
 }

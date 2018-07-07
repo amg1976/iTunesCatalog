@@ -17,12 +17,17 @@ final class ItemDetailViewController: UIViewController {
     @IBOutlet private weak var itemTitleLabel: UILabel!
     @IBOutlet private weak var itemSubtitleLabel: UILabel!
     
-    private var item: ItemDetailViewModel! {
+    private var viewModel: ItemDetailViewModel! {
         didSet {
-            guard let item = item else { return }
-            itemImageView.backgroundColor = .lightGray
-            itemTitleLabel.text = item.title
-            itemSubtitleLabel.text = item.subtitle
+            guard let viewModel = viewModel else { return }
+            loadViewIfNeeded()
+            itemTitleLabel.text = viewModel.title
+            itemSubtitleLabel.text = viewModel.subtitle
+            
+            itemImageView.startActivityIndicator()
+            viewModel.getImage { [weak self] result in
+                self?.itemImageView.stopActivityIndicator(withResult: result)
+            }
         }
     }
     
@@ -30,14 +35,13 @@ final class ItemDetailViewController: UIViewController {
 
 extension ItemDetailViewController {
     
-    static func create(withItem item: ItemDetailViewModel) -> ItemDetailViewController {
+    static func create(withViewModel viewModel: ItemDetailViewModel) -> ItemDetailViewController {
         
         guard let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: self)) as? ItemDetailViewController else {
             fatalError("Unable to create ItemDetailViewController")
         }
         
-        viewController.loadViewIfNeeded()
-        viewController.item = item
+        viewController.viewModel = viewModel
         
         return viewController
 

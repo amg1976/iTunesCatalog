@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum LocalFilesServiceError: Error {
+    case unrecognizedResource
+}
+
 /// Loads Resources from local json files
 final class LocalFilesService: ResourceLoader {
     
@@ -37,6 +41,9 @@ final class LocalFilesService: ResourceLoader {
             
             completion(.succeeded(response))
 
+        } else {
+            
+            completion(.errored(LocalFilesServiceError.unrecognizedResource))
         }
         
     }

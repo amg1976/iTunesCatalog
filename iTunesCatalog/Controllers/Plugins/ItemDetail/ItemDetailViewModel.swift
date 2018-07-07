@@ -13,4 +13,13 @@ struct ItemDetailViewModel {
     let title: String
     let subtitle: String
     let imageUrl: String
+    let clientApi: ClientApi
+    
+    init(withClientApi clientApi: ClientApi, feedItem: FeedItem) {
+        self.clientApi = clientApi
+        self.title = feedItem.name
+        self.subtitle = feedItem.artistName
+        self.imageUrl = feedItem.artworkUrl100
+    }
+    
 }
