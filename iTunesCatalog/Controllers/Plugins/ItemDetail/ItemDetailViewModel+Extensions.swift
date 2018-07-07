@@ -11,7 +11,7 @@ import UIKit
 extension ItemDetailViewModel {
 
     func getImage(onCompletion completion: @escaping (Result<UIImage>) -> Void) {
-        clientApi.getImage(withUrl: imageUrl, completion: completion)
+        clientApi.getImage(withId: self.id, url: self.imageUrl, completion: completion)
     }
     
 }

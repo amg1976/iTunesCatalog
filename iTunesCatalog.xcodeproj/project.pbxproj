@@ -48,6 +48,8 @@
 		72F0913E20F1434C00D8BBE7 /* ItemDetailViewModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0913D20F1434C00D8BBE7 /* ItemDetailViewModel+Extensions.swift */; };
 		72F0914220F173AE00D8BBE7 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0914120F173AE00D8BBE7 /* UIImageView+Extensions.swift */; };
 		72F0914520F17AF200D8BBE7 /* ItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0914420F17AF200D8BBE7 /* ItemCollectionCell.swift */; };
+		72F0914720F183FC00D8BBE7 /* GenericCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0914620F183FC00D8BBE7 /* GenericCache.swift */; };
+		72F0914920F1849C00D8BBE7 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0914820F1849C00D8BBE7 /* ImageCache.swift */; };
 		72FBAF9120EFCE7F00C115C5 /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBAF9020EFCE7F00C115C5 /* ItemDetailViewModel.swift */; };
 		72FBAF9320F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FBAF9220F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift */; };
 		72FE2FD620EED5900087835B /* FeedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE2FD520EED5900087835B /* FeedType.swift */; };
@@ -110,6 +112,8 @@
 		72F0913D20F1434C00D8BBE7 /* ItemDetailViewModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemDetailViewModel+Extensions.swift"; sourceTree = "<group>"; };
 		72F0914120F173AE00D8BBE7 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		72F0914420F17AF200D8BBE7 /* ItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionCell.swift; sourceTree = "<group>"; };
+		72F0914620F183FC00D8BBE7 /* GenericCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCache.swift; sourceTree = "<group>"; };
+		72F0914820F1849C00D8BBE7 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		72FBAF9020EFCE7F00C115C5 /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
 		72FBAF9220F01D7200C115C5 /* ItemCollectionViewModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemCollectionViewModel+Extensions.swift"; sourceTree = "<group>"; };
 		72FE2FD520EED5900087835B /* FeedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedType.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			children = (
 				2009937420DF9EC9004730F3 /* ClientApi.swift */,
 				72F0913920F13ECA00D8BBE7 /* ClientApi+Extensions.swift */,
+				72F0914620F183FC00D8BBE7 /* GenericCache.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 		729B8DD520E01C8100ED65A4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				72CCF86320F189AE00EF71B9 /* Cache */,
 				72FE2FD520EED5900087835B /* FeedType.swift */,
 				72A0F4B020EEE24B00A23A16 /* Helpers.swift */,
 				729B8DD320E01A9600ED65A4 /* Result.swift */,
@@ -369,6 +375,14 @@
 				72F0913D20F1434C00D8BBE7 /* ItemDetailViewModel+Extensions.swift */,
 			);
 			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		72CCF86320F189AE00EF71B9 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				72F0914820F1849C00D8BBE7 /* ImageCache.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		72F0914020F1737F00D8BBE7 /* AsyncImage */ = {
@@ -555,7 +569,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F0914720F183FC00D8BBE7 /* GenericCache.swift in Sources */,
 				72A0F4D020EFB7F800A23A16 /* JsonFileLoader.swift in Sources */,
+				72F0914920F1849C00D8BBE7 /* ImageCache.swift in Sources */,
 				729B8DEC20E0475B00ED65A4 /* AppCoordinator.swift in Sources */,
 				72A0F4C220EEF93900A23A16 /* ItemCollectionViewModel.swift in Sources */,
 				2009937020DF9E5E004730F3 /* ListResponse.swift in Sources */,

@@ -10,6 +10,7 @@ import Foundation
 
 /// ViewModel to feed each Item in the Feed items collection
 struct ItemDetailViewModel {
+    let id: String
     let title: String
     let subtitle: String
     let imageUrl: String
@@ -17,6 +18,7 @@ struct ItemDetailViewModel {
     
     init(withClientApi clientApi: ClientApi, feedItem: FeedItem) {
         self.clientApi = clientApi
+        self.id = feedItem.id
         self.title = feedItem.name
         self.subtitle = feedItem.artistName
         self.imageUrl = feedItem.artworkUrl100

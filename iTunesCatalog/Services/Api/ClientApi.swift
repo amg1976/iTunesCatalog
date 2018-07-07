@@ -13,14 +13,17 @@ final class ClientApi {
     // MARK: - Public properties
     
     private (set) var resourceLoader: ResourceLoader
+    private (set) var imageCache: ImageCache
 
     // MARK: - Public methods
 
     /// Creates a new instance of the ClientApi object
     ///
     /// - Parameter resourceLoader: an instance of ResourceLoader. Defaults to NetworkService.
-    init(withResourceLoader resourceLoader: ResourceLoader = NetworkService()) {
+    init(withResourceLoader resourceLoader: ResourceLoader = NetworkService(),
+         imageCache: ImageCache = ImageCache()) {
         self.resourceLoader = resourceLoader
+        self.imageCache = imageCache
     }
     
     /// Fetchs a list of movies from the resource loader
