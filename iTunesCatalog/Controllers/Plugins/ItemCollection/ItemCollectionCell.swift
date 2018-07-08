@@ -27,12 +27,7 @@ final class ItemCollectionCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(imageView)
-        NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor),
-            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor)
-            ])
+        imageView.pin(toView: contentView)
     }
     
     required init?(coder aDecoder: NSCoder) {

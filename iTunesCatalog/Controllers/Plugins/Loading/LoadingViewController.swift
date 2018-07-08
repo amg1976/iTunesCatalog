@@ -58,11 +58,7 @@ private extension Private {
     
     func setup() {
         self.view.addSubview(activityView)
-        
-        NSLayoutConstraint.activate([
-            activityView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            activityView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-            ])
+        activityView.center(inView: view)
     }
     
 }

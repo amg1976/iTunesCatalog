@@ -50,12 +50,7 @@ private extension Private {
         view.backgroundColor = .white
         
         view.addSubview(collectionView)
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
-            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            collectionView.leftAnchor.constraint(equalTo: view.leftAnchor)
-            ])
+        collectionView.pin(toView: view)
 
         collectionView.register(ItemCollectionCell.self, forCellWithReuseIdentifier: ItemCollectionCell.reusableIdentifier)
         collectionView.dataSource = viewModel

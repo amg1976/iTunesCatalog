@@ -15,7 +15,10 @@ extension UIViewController {
         childViewController.willMove(toParentViewController: self)
         
         self.addChildViewController(childViewController)
+        
+        childViewController.view.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(childViewController.view)
+        childViewController.view.pin(toView: self.view)
         
         childViewController.didMove(toParentViewController: self)
         
