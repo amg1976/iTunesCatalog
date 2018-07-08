@@ -294,7 +294,7 @@
 		729B8DD520E01C8100ED65A4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				72CCF86320F189AE00EF71B9 /* Cache */,
+				72F0914820F1849C00D8BBE7 /* ImageCache.swift */,
 				72FE2FD520EED5900087835B /* FeedType.swift */,
 				72A0F4B020EEE24B00A23A16 /* Helpers.swift */,
 				729B8DD320E01A9600ED65A4 /* Result.swift */,
@@ -378,14 +378,6 @@
 				72F0913D20F1434C00D8BBE7 /* ItemDetailViewModel+Extensions.swift */,
 			);
 			path = ItemDetail;
-			sourceTree = "<group>";
-		};
-		72CCF86320F189AE00EF71B9 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				72F0914820F1849C00D8BBE7 /* ImageCache.swift */,
-			);
-			path = Cache;
 			sourceTree = "<group>";
 		};
 		72F0914020F1737F00D8BBE7 /* AsyncImage */ = {

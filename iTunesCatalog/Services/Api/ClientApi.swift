@@ -13,7 +13,7 @@ final class ClientApi {
     // MARK: - Public properties
     
     private (set) var resourceLoader: ResourceLoader
-    private (set) var imageCache: ImageCache
+    private (set) var imageCache: GenericCache
 
     // MARK: - Public methods
 
@@ -21,7 +21,7 @@ final class ClientApi {
     ///
     /// - Parameter resourceLoader: an instance of ResourceLoader. Defaults to NetworkService.
     init(withResourceLoader resourceLoader: ResourceLoader = NetworkService(),
-         imageCache: ImageCache = ImageCache()) {
+         imageCache: GenericCache = ImageCache()) {
         self.resourceLoader = resourceLoader
         self.imageCache = imageCache
     }

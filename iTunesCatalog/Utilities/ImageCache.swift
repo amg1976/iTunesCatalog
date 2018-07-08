@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ImageCache: GenericCache {
+final class ImageCache: GenericCache {
 
-    func set(_ item: UIImage, withKey key: String) {
+    func set<CacheItem>(_ item: CacheItem, withKey key: String) {
 
-        guard let imageData = UIImagePNGRepresentation(item),
+        guard let image = item as? UIImage,
+            let imageData = UIImagePNGRepresentation(image),
             let cacheDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else { return }
         
         let fileUrl = cacheDirectory.appendingPathComponent("\(key).png", isDirectory: false)
@@ -21,15 +22,15 @@ class ImageCache: GenericCache {
         
     }
     
-    func get(withKey key: String) -> UIImage? {
+    func get<CacheItem>(withKey key: String) -> CacheItem? {
 
         guard let cacheDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else { return nil }
         
         let fileUrl = cacheDirectory.appendingPathComponent("\(key).png", isDirectory: false)
-            
+        
         guard let imageData = try? Data(contentsOf: fileUrl), let image = UIImage(data: imageData) else { return nil }
 
-        return image
+        return image as? CacheItem
 
     }
 

@@ -9,7 +9,6 @@
 import Foundation
 
 protocol GenericCache {
-    associatedtype CacheItem
-    func set(_ item: CacheItem, withKey key: String)
-    func get(withKey key: String) -> CacheItem?
+    func set<CacheItem>(_ item: CacheItem, withKey key: String)
+    func get<CacheItem>(withKey key: String) -> CacheItem?
 }

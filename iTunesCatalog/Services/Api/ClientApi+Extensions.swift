@@ -22,7 +22,7 @@ extension ClientApi {
     ///   - completion: returns an instance of a UIImage
     func getImage(withId imageId: String, url: String, completion: @escaping (Result<UIImage>) -> Void) {
         
-        if let image = imageCache.get(withKey: imageId) {
+        if let image: UIImage = imageCache.get(withKey: imageId) {
             completion(Result.succeeded(image))
             return
         }
