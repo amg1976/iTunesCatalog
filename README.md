@@ -63,3 +63,5 @@ Coordinates the transitions between the main list of feeds and the final control
 Several improvements could be added to the project. First of all, even though almost every class was implemented with unit testing in mind, the coverage of unit tests could be vastly improved.
 
 Another area that could be improved is the offline usability of the app, by using a local database that could store the API responses and could use that information as source in case of the network not being available.
+
+No special attention was devoted to the scrolling performance of the feed item collection. Also, because we are downloading the images asynchronously, it may happen that when the image is received, the cell where it should be presented is already being reused for another item. This could be easily improved, a simple solution could be cancelling the image request when a cell is about to be reused.
